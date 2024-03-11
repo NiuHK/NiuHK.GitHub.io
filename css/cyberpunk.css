@@ -11642,16 +11642,24 @@ figure.highlight.foldable div.level-left {
   background-color: #f5e703;
 }
 @media screen and (min-width: 1280px) {
+  .is-3-column .container {
+    max-width: 1216px;
+    width: 1216px;
+  }
   .is-1-column .container,
   .is-2-column .container {
-    max-width: 960px;
-    width: 960px;
+    max-width: 1088px -64px;
+    width: 1088px -64px;
   }
 }
 @media screen and (min-width: 1472px) {
+  .is-3-column .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
   .is-2-column .container {
-    max-width: 1152px;
-    width: 1152px;
+    max-width: 1280px -64px;
+    width: 1280px -64px;
   }
   .is-1-column .container {
     max-width: 960px;
@@ -11677,6 +11685,64 @@ figure.highlight.foldable div.level-left {
   .section {
     padding: 1.5rem 1rem;
   }
+}
+.is-3-column {
+  background-image: url("https://picstorage.danielniu.me/imgs/20240311104758.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.widget {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.439) !important;
+}
+.widget .tags .tag:last-child {
+  background: rgba(255,255,255,0.439) !important;
+}
+.widget .menu-list .tag {
+  background: rgba(255,255,255,0.439) !important;
+}
+.navbar-main {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.439);
+}
+.navbar-main .navbar-menu {
+  background-color: rgba(255,255,255,0);
+}
+.footer {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.439);
+}
+.menu-list a.is-active {
+  background-color: rgba(245,206,147,0.322);
+  color: #e57329;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'JetBrains Mono', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
+}
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: 'JetBrains Mono', 'Source Code Pro', monospace, 'Microsoft YaHei';
+}
+.pagination .pagination-link.is-current {
+  background: rgba(255,128,0,0.71);
+  backdrop-filter: blur(20px);
+}
+.pagination .pagination-link,
+.pagination .pagination-previous,
+.pagination .pagination-next {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.439);
+}
+a {
+  color: #ff8000;
 }
 body {
   counter-reset: card;
