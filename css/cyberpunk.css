@@ -11709,6 +11709,13 @@ figure.highlight.foldable div.level-left {
   background-color: rgba(245,206,147,0.322);
   color: #e57329;
 }
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'JetBrains Mono', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
+}
 code,
 pre {
   -moz-osx-font-smoothing: auto;
