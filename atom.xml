@@ -42,9 +42,9 @@
     <link href="http://blog.danielniu.me/2024/03/09/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://blog.danielniu.me/2024/03/09/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2024-03-09T03:14:43.000Z</published>
-    <updated>2024-03-10T05:57:21.581Z</updated>
+    <updated>2024-03-11T06:59:02.446Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>hexo是一个可以github page 托管的静态页面博客框架，需要node.js进行编译发布，鉴于windows配置node.js的不变性，使用github codespace托管运行环境以及博客源码，进行无服务器博客运营。</p></blockquote><span id="more"></span><p>icarus 主题 整体颜色改变：<br>&#x2F;node_modules&#x2F;hexo-theme-icarus&#x2F;include&#x2F;style&#x2F;base.styl<br>l15 $primary ?&#x3D; hsl(30, 100%,  50%)</p><p><a href="http://zhaommmmomo.cn/2021/09/14/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">更改两栏布局下文章宽度</a></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>hexo是一个可以github page 托管的静态页面博客框架，需要node.js进行编译发布，鉴于windows配置node.js的不变性，使用github codespace托管运行环境以及博客源码，进行无服务器博客运营。</p></blockquote><span id="more"></span><p>icarus 主题 整体颜色改变：<br>&#x2F;node_modules&#x2F;hexo-theme-icarus&#x2F;include&#x2F;style&#x2F;base.styl<br>l15 $primary ?&#x3D; hsl(30, 100%,  50%)</p><p><a href="http://zhaommmmomo.cn/2021/09/14/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">更改两栏布局下文章宽度</a></p><p><a href="https://hujiahao6.gitee.io/2020/04/02/hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/">部分更改</a></p><p>调整背景透明度<br>themes\icarus\source\js\animation.js<br>L44</p><p><a href="https://blog.mchook.cn/2021/07/22/icarus%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89/">https://blog.mchook.cn/2021/07/22/icarus%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89/</a></p><p>我使用的布局：.is-3-colum</p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;

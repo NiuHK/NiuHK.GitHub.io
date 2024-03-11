@@ -1,0 +1,29 @@
+.is-3-column {
+  background-image: url("https://picstorage.danielniu.me/imgs/20240311104758.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.widget {
+  background-color: #fff;
+}
+.navbar-main {
+  background-color: rgba(255,255,255,0.8);
+}
+.navbar-main .navbar-menu {
+  background-color: rgba(255,255,255,0);
+}
+.footer {
+  background-color: rgba(255,255,255,0.8);
+}
+.menu-list a.is-active {
+  background-color: rgba(245,206,147,0.322);
+  color: #e57329;
+}
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: 'JetBrains Mono', 'Source Code Pro', monospace, 'Microsoft YaHei';
+}

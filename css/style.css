@@ -10255,9 +10255,6 @@ html {
   text-size-adjust: 100%;
 }
 body {
-  background: url("../img/20240310141934.jpeg") no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -11687,4 +11684,11 @@ figure.highlight.foldable div.level-left {
   .section {
     padding: 1.5rem 1rem;
   }
+}
+.is-2-column {
+  background-image: url("https://picstorage.danielniu.me/imgs/20240311104758.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
