@@ -11696,6 +11696,12 @@ figure.highlight.foldable div.level-left {
   backdrop-filter: blur(20px);
   background-color: rgba(255,255,255,0.439) !important;
 }
+.widget .tags .tag:last-child {
+  background: rgba(255,255,255,0.439) !important;
+}
+.widget .menu-list .tag {
+  background: rgba(255,255,255,0.439) !important;
+}
 .navbar-main {
   backdrop-filter: blur(20px);
   background-color: rgba(255,255,255,0.439);
