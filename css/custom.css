@@ -7,7 +7,7 @@
 }
 .widget {
   backdrop-filter: blur(20px);
-  background-color: rgba(255,255,255,0.439);
+  background-color: rgba(255,255,255,0.439) !important;
 }
 .navbar-main {
   backdrop-filter: blur(20px);
