@@ -11731,6 +11731,19 @@ pre {
   -webkit-font-smoothing: auto;
   font-family: 'JetBrains Mono', 'Source Code Pro', monospace, 'Microsoft YaHei';
 }
+.pagination .pagination-link.is-current {
+  background: rgba(255,128,0,0.71);
+  backdrop-filter: blur(20px);
+}
+.pagination .pagination-link,
+.pagination .pagination-previous,
+.pagination .pagination-next {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.439);
+}
+a {
+  color: #ff8000;
+}
 body {
   counter-reset: card;
 }
