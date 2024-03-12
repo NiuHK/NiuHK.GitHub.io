@@ -11411,6 +11411,10 @@ figure.highlight.foldable div.level-left {
   #toc-mask.is-active {
     display: block;
   }
+  #toc {
+    max-height: calc(100vh - 22px);
+    overflow-y: scroll;
+  }
 }
 .donate {
   position: relative;
@@ -11757,4 +11761,9 @@ pre {
 }
 a {
   color: #ff8000;
+}
+.set-flutter {
+  background-color: rgba(255,255,255,0.439);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
 }
