@@ -7,7 +7,13 @@
 }
 .widget {
   backdrop-filter: blur(20px);
-  background-color: rgba(255,255,255,0.439);
+  background-color: rgba(255,255,255,0.439) !important;
+}
+.widget .tags .tag:last-child {
+  background: rgba(255,255,255,0.439) !important;
+}
+.widget .menu-list .tag {
+  background: rgba(255,255,255,0.439) !important;
 }
 .navbar-main {
   backdrop-filter: blur(20px);
@@ -16,7 +22,22 @@
 .navbar-main .navbar-menu {
   background-color: rgba(255,255,255,0);
 }
+a.navbar-item:focus,
+.navbar-link:focus,
+a.navbar-item:focus-within,
+.navbar-link:focus-within,
+a.navbar-item:hover,
+.navbar-link:hover,
+a.navbar-item.is-active,
+.navbar-link.is-active {
+  background-color: rgba(250,250,250,0);
+  color: #ff8000;
+}
 .footer {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.439);
+}
+#back-to-top {
   backdrop-filter: blur(20px);
   background-color: rgba(255,255,255,0.439);
 }
@@ -36,4 +57,17 @@ pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
   font-family: 'JetBrains Mono', 'Source Code Pro', monospace, 'Microsoft YaHei';
+}
+.pagination .pagination-link.is-current {
+  background: rgba(255,128,0,0.71);
+  backdrop-filter: blur(20px);
+}
+.pagination .pagination-link,
+.pagination .pagination-previous,
+.pagination .pagination-next {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.439);
+}
+a {
+  color: #ff8000;
 }
