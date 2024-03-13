@@ -11763,10 +11763,19 @@ pre {
 a {
   color: #ff8000;
 }
-.set-flutter {
-  background-color: rgba(255,255,255,0.439);
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
+.custom-h1 {
+  box-shadow: inset 0em -0.5em #ffc600;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.custom-h2 {
+  box-shadow: inset 0em -0.5em rgba(255,112,0,0.278);
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 body {
   counter-reset: card;
