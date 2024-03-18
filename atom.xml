@@ -6,7 +6,7 @@
   <link href="http://blog.danielniu.me/atom.xml" rel="self"/>
   
   <link href="http://blog.danielniu.me/"/>
-  <updated>2024-03-17T16:24:49.714Z</updated>
+  <updated>2024-03-18T15:26:02.136Z</updated>
   <id>http://blog.danielniu.me/</id>
   
   <author>
@@ -17,20 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing 796.子矩阵的和</title>
+    <link href="http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/"/>
+    <id>http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/</id>
+    <published>2024-03-18T15:21:02.000Z</published>
+    <updated>2024-03-18T15:26:02.136Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>AcWing 796.子矩阵的和</p></blockquote><span id="more"></span><p>第二层矩阵存当前（0，0）-（x，y）和，求x1yx1-x2y2类似于求面积<br><img src="https://picstorage.danielniu.me/imgs/20240318231648.jpg" height="200" width="200" /><br>可理解为坡度(大概)<br><img src="https://picstorage.danielniu.me/imgs/20240318231647.jpg" height="200" width="200" /></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">100010</span>;</span><br><span class="line">ll v[N][<span class="number">1000</span>][<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,q;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">                cin&gt;&gt;v[j][i][<span class="number">0</span>];</span><br><span class="line">                v[j][i][<span class="number">1</span>]=v[j<span class="number">-1</span>][i][<span class="number">1</span>]+v[j][i<span class="number">-1</span>][<span class="number">1</span>]-v[j<span class="number">-1</span>][i<span class="number">-1</span>][<span class="number">1</span>]+v[j][i][<span class="number">0</span>];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> x1,y1,x2,y2,count;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)&#123;</span><br><span class="line">        count=<span class="number">0</span>;</span><br><span class="line">        cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        ll count=v[x2][y2][<span class="number">1</span>]-v[x2][y1<span class="number">-1</span>][<span class="number">1</span>]-v[x1<span class="number">-1</span>][y2][<span class="number">1</span>]+v[x1<span class="number">-1</span>][y1<span class="number">-1</span>][<span class="number">1</span>];</span><br><span class="line">        cout&lt;&lt;count&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;AcWing 796.子矩阵的和&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>费曼技巧</title>
     <link href="http://blog.danielniu.me/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/"/>
     <id>http://blog.danielniu.me/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/</id>
     <published>2024-03-17T16:16:20.000Z</published>
-    <updated>2024-03-17T16:24:49.714Z</updated>
+    <updated>2024-03-18T15:20:20.868Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><pre><code>所谓的“费曼技巧”，来源模糊，需要调查确认，在网上找到了两项证据，可以支持**【**  **通过向别人清楚地解说一件事，来确认自己真的弄懂了这件事。**  **】** ，但费曼本人是否提出过【费曼技巧】，尚未找到证据。无论如何，**上网时请不要轻信未经证实的信息。**</code></pre></blockquote><p><code>&lt;!-- more --&gt;</code></p><p><a href="https://www.zhihu.com/question/20576786">知乎原文</a></p><h1 id="费曼和他的老师曾经提倡过“以教促学”"><a href="#费曼和他的老师曾经提倡过“以教促学”" class="headerlink" title="费曼和他的老师曾经提倡过“以教促学”"></a>费曼和他的老师曾经提倡过“以教促学”</h1><blockquote><p>原文来自<a href="https://link.zhihu.com/?target=http://www.quora.com/Learning-New-Things/How-can-you-learn-faster/answer/Acaz-Pereira"> Quora: 如何才能学得快一些 (How can you learn faster)</a></p></blockquote><ul><li>第一步 - 选择一个你想要理解的概念选择一个你想要理解的概念, 然后拿出一张白纸, 把这个概念写在白纸的最上边.</li><li>第二步 - 设想一种场景，你正要向别人传授这个概念在白纸上写下你对这个概念的解释, 就好像你正在教导一位新接触这个概念的学生一样. 当你这样做的时候, 你会更清楚地意识到关于这个概念你理解了多少, 以及是否还存在理解不清的地方.</li><li>第三步 - 如果你感觉卡壳了, 就回顾一下学习资料无论何时你感觉卡壳了, 都要回到原始的学习资料并重新学习让你感到卡壳的那部分, 直到你领会得足够顺畅, 顺畅到可以在纸上解释这个部分为止.第四步 - 为了让你的讲解通俗易懂，简化语言表达最终的目的, 是用你自己的语言, 而不是学习资料中的语言来解释概念. 如果你的解释很冗长或者令人迷惑, 那就说明你对概念的理解可能并没有你自己想象得那么顺畅 – 你要努力简化语言表达, 或者与已有的知识建立一种类比关系, 以便更好地理解它。</li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><pre><code>所谓的“费曼技巧”，来源模糊，需要调查确认，在网上找到了两项证据，可以支持**【**  **通过向别人清楚地解说一件事，来确认自己真的弄懂了这件事。**  **】** ，但费曼本人是否提出过【费曼技巧】，尚未找到证据。无论如何，**上网时请不要轻信未经证实的信息。**</code></pre></blockquote><span id="more"></span><p><a href="https://www.zhihu.com/question/20576786">知乎原文</a></p><h1 id="费曼和他的老师曾经提倡过“以教促学”"><a href="#费曼和他的老师曾经提倡过“以教促学”" class="headerlink" title="费曼和他的老师曾经提倡过“以教促学”"></a>费曼和他的老师曾经提倡过“以教促学”</h1><blockquote><p>原文来自<a href="https://link.zhihu.com/?target=http://www.quora.com/Learning-New-Things/How-can-you-learn-faster/answer/Acaz-Pereira"> Quora: 如何才能学得快一些 (How can you learn faster)</a></p></blockquote><ul><li>第一步 - 选择一个你想要理解的概念选择一个你想要理解的概念, 然后拿出一张白纸, 把这个概念写在白纸的最上边.</li><li>第二步 - 设想一种场景，你正要向别人传授这个概念在白纸上写下你对这个概念的解释, 就好像你正在教导一位新接触这个概念的学生一样. 当你这样做的时候, 你会更清楚地意识到关于这个概念你理解了多少, 以及是否还存在理解不清的地方.</li><li>第三步 - 如果你感觉卡壳了, 就回顾一下学习资料无论何时你感觉卡壳了, 都要回到原始的学习资料并重新学习让你感到卡壳的那部分, 直到你领会得足够顺畅, 顺畅到可以在纸上解释这个部分为止.第四步 - 为了让你的讲解通俗易懂，简化语言表达最终的目的, 是用你自己的语言, 而不是学习资料中的语言来解释概念. 如果你的解释很冗长或者令人迷惑, 那就说明你对概念的理解可能并没有你自己想象得那么顺畅 – 你要努力简化语言表达, 或者与已有的知识建立一种类比关系, 以便更好地理解它。</li></ul>]]></content>
     
     
-      
-      
     <summary type="html">&lt;blockquote&gt;
-&lt;pre&gt;&lt;code&gt;所谓的“费曼技巧”，来源模糊，需要调查确认，在网上找到了两项证据，可以支持**【**  **通过向别人清楚地解说一件事，来确认自己真的弄懂了这件事。**  **】** ，但费曼本人是否提出过【费曼技巧】，尚未找到证据。无论如何，**</summary>
-      
+&lt;pre&gt;&lt;code&gt;所谓的“费曼技巧”，来源模糊，需要调查确认，在网上找到了两项证据，可以支持**【**  **通过向别人清楚地解说一件事，来确认自己真的弄懂了这件事。**  **】** ，但费曼本人是否提出过【费曼技巧】，尚未找到证据。无论如何，**上网时请不要轻信未经证实的信息。**
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
