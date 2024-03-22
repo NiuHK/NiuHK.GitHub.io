@@ -18,3 +18,4 @@ for (let i = 0; i < h2Elements.snapshotLength; i++) {
     h2Element.innerHTML = '';
     h2Element.appendChild(spanElement);
 }
+//以上为美化h1h2
