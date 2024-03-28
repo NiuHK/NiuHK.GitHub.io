@@ -6,7 +6,7 @@
   <link href="http://blog.danielniu.me/atom.xml" rel="self"/>
   
   <link href="http://blog.danielniu.me/"/>
-  <updated>2024-03-24T11:23:14.372Z</updated>
+  <updated>2024-03-28T13:45:37.072Z</updated>
   <id>http://blog.danielniu.me/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于quatrus的verilog学习</title>
+    <link href="http://blog.danielniu.me/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://blog.danielniu.me/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/</id>
+    <published>2024-03-28T13:42:53.000Z</published>
+    <updated>2024-03-28T13:45:37.072Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>quartus是一个配置麻烦的硬件编程平台，本文包括安装配置到常见问题解答，环境优化。</p></blockquote><span id="more"></span><h1 id="quatrus安装以及modelsim配置"><a href="#quatrus安装以及modelsim配置" class="headerlink" title="quatrus安装以及modelsim配置"></a>quatrus安装以及modelsim配置</h1><ol><li>quatrus 不操作</li><li><code>modism.exe </code>的文件夹加入到path</li><li><code>modism</code>文件夹下，<code>win64</code>下 <code>LISCENSE.TXT</code> 加入到 <code>path（user）</code></li></ol><p><code>tools-&gt;options-&gt;general-&gt;eda tools</code> 中设置<code>modelsim</code>路径<code>D:\Program\modeltech64_10.4\win64</code>（exe路径文件夹）</p><h1 id="常见问题解决以及优化"><a href="#常见问题解决以及优化" class="headerlink" title="常见问题解决以及优化"></a>常见问题解决以及优化</h1><h2 id="设置编译器件库位置（新项目都需要）"><a href="#设置编译器件库位置（新项目都需要）" class="headerlink" title="设置编译器件库位置（新项目都需要）"></a>设置编译器件库位置（新项目都需要）</h2><p>同时也解决了  Quartus Prime18.0 中解决仿真报错<code> Error: (vsim-19) Failed to access library</code> 的问题</p><ol><li>点击<code>Tools-&gt;Launch Simulation Library Compile</code>;</li><li>设置<code>“Output directory&quot;</code>为：<code>&#123;项目文件夹&#125;/simulation/qsim</code>，在进行编译,如此设置以后，波形图<code>simulation-&gt;simulation settings</code>中的路径直接默认就行</li></ol><blockquote><p>（主要是这里编译的器件库路径要匹配波形图<code>simulation-&gt;simulation settings</code>中的路径）</p></blockquote><h2 id="联合vscode开发"><a href="#联合vscode开发" class="headerlink" title="联合vscode开发"></a>联合vscode开发</h2><p>点击<code>tools</code>中的<code>options</code>，点击其中的 <code>preferred text editor</code>，在 <code>textx editor</code>栏中选择<code>custom</code>，在<code>command-line</code>中添加如下的信息<code>&quot;E:\Microsoft VS Code\Code.exe&quot; -r -g %f:%l</code></p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;quartus是一个配置麻烦的硬件编程平台，本文包括安装配置到常见问题解答，环境优化。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="verilog" scheme="http://blog.danielniu.me/tags/verilog/"/>
+    
+    <category term="vscode" scheme="http://blog.danielniu.me/tags/vscode/"/>
+    
+    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="破解软件" scheme="http://blog.danielniu.me/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="quartus" scheme="http://blog.danielniu.me/tags/quartus/"/>
+    
+    <category term="modelsim" scheme="http://blog.danielniu.me/tags/modelsim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MS_Office精简下载安装激活</title>
     <link href="http://blog.danielniu.me/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/"/>
     <id>http://blog.danielniu.me/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</id>
     <published>2024-03-24T11:20:49.000Z</published>
-    <updated>2024-03-24T11:23:14.372Z</updated>
+    <updated>2024-03-28T13:43:21.080Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>基于VL版本office的MS_Office精简下载安装激活</p></blockquote><span id="more"></span><p><a href="https://www.youtube.com/watch?v=VSjRx7Hoa60">YouTube视频</a></p><h1 id="下载官方部署器"><a href="#下载官方部署器" class="headerlink" title="下载官方部署器"></a>下载官方部署器</h1><p>访问官方部署器地址：<br><a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">https://www.microsoft.com/en-us/download/details.aspx?id=49117</a></p><p><img src="https://picstorage.danielniu.me/imgs/202403241859813.png"></p><p>直接点击download，下载，并运行。</p><p>选择一空文件夹，完成程序。</p><p><img src="https://picstorage.danielniu.me/imgs/202403241901381.png"></p><h1 id="下载部署自定义文件"><a href="#下载部署自定义文件" class="headerlink" title="下载部署自定义文件"></a>下载部署自定义文件</h1><p>访问自定义网址：<br><a href="https://config.office.com/deploymentsettings">https://config.office.com/deploymentsettings</a></p><p><img src="https://picstorage.danielniu.me/imgs/202403241902791.png"></p><p>选择: 64位 批量许可证版本的office套件，对应的visio、project（这俩还看起来挺有用的，不用的话选择无）其他产品选择 语言包</p><p>应用-&gt;选择需要的项目</p><p>语言-&gt;选择中文</p><p>剩下的全部默认</p><p>导出-&gt;保留当前设置，命名为config</p><p>下载该文件，并导入当刚刚的文件夹中</p><h1 id="下载、安装"><a href="#下载、安装" class="headerlink" title="下载、安装"></a>下载、安装</h1><p>管理员cmd，cd到刚刚的文件夹</p><p>运行 setup &#x2F;download config.xml</p><p>等待命令运行完毕（没有提示，等待弹出下一个输入框）</p><p>运行 setup &#x2F;configure config.xml</p><p>等待安装完成，重启，看是否激活</p><p>未激活就管理员cmd格式下cd C:\Program Files\Microsoft Office\Office16 重启并查看激活状态</p><p>还不行直接使用网上搜的kms激活VL版本office方法。</p>]]></content>
     
@@ -32,6 +63,8 @@
     
     
     
+    
+    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
@@ -78,7 +111,7 @@
     <link href="http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/"/>
     <id>http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/</id>
     <published>2024-03-18T15:21:02.000Z</published>
-    <updated>2024-03-18T15:26:02.136Z</updated>
+    <updated>2024-03-28T13:47:19.008Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>AcWing 796.子矩阵的和</p></blockquote><span id="more"></span><p>第二层矩阵存当前（0，0）-（x，y）和，求x1yx1-x2y2类似于求面积<br><img src="https://picstorage.danielniu.me/imgs/20240318231648.jpg" height="200" width="200" /><br>可理解为坡度(大概)<br><img src="https://picstorage.danielniu.me/imgs/20240318231647.jpg" height="200" width="200" /></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">100010</span>;</span><br><span class="line">ll v[N][<span class="number">1000</span>][<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,q;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">                cin&gt;&gt;v[j][i][<span class="number">0</span>];</span><br><span class="line">                v[j][i][<span class="number">1</span>]=v[j<span class="number">-1</span>][i][<span class="number">1</span>]+v[j][i<span class="number">-1</span>][<span class="number">1</span>]-v[j<span class="number">-1</span>][i<span class="number">-1</span>][<span class="number">1</span>]+v[j][i][<span class="number">0</span>];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> x1,y1,x2,y2,count;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)&#123;</span><br><span class="line">        count=<span class="number">0</span>;</span><br><span class="line">        cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        ll count=v[x2][y2][<span class="number">1</span>]-v[x2][y1<span class="number">-1</span>][<span class="number">1</span>]-v[x1<span class="number">-1</span>][y2][<span class="number">1</span>]+v[x1<span class="number">-1</span>][y1<span class="number">-1</span>][<span class="number">1</span>];</span><br><span class="line">        cout&lt;&lt;count&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -89,6 +122,8 @@
     
     
     
+    
+    <category term="c++" scheme="http://blog.danielniu.me/tags/c/"/>
     
   </entry>
   
@@ -202,7 +237,7 @@
     <link href="http://blog.danielniu.me/2024/03/09/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://blog.danielniu.me/2024/03/09/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2024-03-09T03:14:43.000Z</published>
-    <updated>2024-03-22T12:41:36.606Z</updated>
+    <updated>2024-03-28T13:46:33.044Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>hexo是一个可以github page 托管的静态页面博客框架，需要node.js进行编译发布，鉴于windows配置node.js的不变性，使用github codespace托管运行环境以及博客源码，进行无服务器博客运营。</p></blockquote><span id="more"></span><p>icarus 主题 整体颜色改变：<br>&#x2F;node_modules&#x2F;hexo-theme-icarus&#x2F;include&#x2F;style&#x2F;base.styl<br>l15 $primary ?&#x3D; hsl(30, 100%,  50%)</p><p><a href="http://zhaommmmomo.cn/2021/09/14/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">更改两栏布局下文章宽度</a></p><p><a href="https://hujiahao6.gitee.io/2020/04/02/hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/">部分更改</a></p><p>调整背景透明度<br>themes\icarus\source\js\animation.js<br>L44</p><p><a href="https://blog.mchook.cn/2021/07/22/icarus%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89/">https://blog.mchook.cn/2021/07/22/icarus%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89/</a><br><a href="https://blog.pk5ls20.com/posts/111d57cd/#span-%E8%83%8C%E6%99%AF%E5%9B%BE%E5%85%A8%E5%B1%8F%E5%8C%96-%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C-span">https://blog.pk5ls20.com/posts/111d57cd/#span-%E8%83%8C%E6%99%AF%E5%9B%BE%E5%85%A8%E5%B1%8F%E5%8C%96-%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C-span</a></p><p>我使用的布局：.is-3-colum</p><p>可以在Markdown文件中使用下面的语法来折叠单独的代码块：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock &quot;可选文件名&quot; lang:代码语言 &gt;folded %&#125;</span><br><span class="line">...代码块内容...</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
