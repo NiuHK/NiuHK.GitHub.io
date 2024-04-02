@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>计算机组成原理笔记 - HK&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content=" hsl(30, 100%, 50%)"><meta name="application-name" content="Daniel Niu"><meta name="msapplication-TileImage" content="img/icon1.svg"><meta name="msapplication-TileColor" content=" hsl(30, 100%, 50%)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Daniel Niu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="72x72" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="96x96" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="128x128" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="256x256" href="img/icon1.svg"><meta name="description" content="计算机组成原理笔记"><meta property="og:type" content="article"><meta property="og:title" content="计算机组成原理笔记"><meta property="og:url" content="http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/"><meta property="og:site_name" content="HK&#039;s Blog"><meta property="og:description" content="计算机组成原理笔记"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://picstorage.danielniu.me/imgs/202404012159712.png"><meta property="og:image" content="https://picstorage.danielniu.me/imgs/202404021407789.png"><meta property="og:image" content="https://picstorage.danielniu.me/imgs/202404021407053.png"><meta property="og:image" content="https://picstorage.danielniu.me/imgs/202404021407995.png"><meta property="og:image" content="https://picstorage.danielniu.me/imgs/202404021407208.png"><meta property="article:published_time" content="2024-04-01T05:34:05.000Z"><meta property="article:modified_time" content="2024-04-02T06:09:43.814Z"><meta property="article:author" content="Daniel Niu"><meta property="article:tag" content="计算机组成原理"><meta property="article:tag" content="笔记"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://picstorage.danielniu.me/imgs/202404012159712.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/"},"headline":"计算机组成原理笔记","image":["https://picstorage.danielniu.me/imgs/202404012159712.png","https://picstorage.danielniu.me/imgs/202404021407789.png","https://picstorage.danielniu.me/imgs/202404021407053.png","https://picstorage.danielniu.me/imgs/202404021407995.png","https://picstorage.danielniu.me/imgs/202404021407208.png"],"datePublished":"2024-04-01T05:34:05.000Z","dateModified":"2024-04-02T06:09:43.814Z","author":{"@type":"Person","name":"Daniel Niu"},"publisher":{"@type":"Organization","name":"HK's Blog","logo":{"@type":"ImageObject","url":"http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/img/icon1.svg"}},"description":"计算机组成原理笔记"}</script><link rel="canonical" href="http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="HK's Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/AboutMe">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-04-01T05:34:05.000Z" title="2024/4/1 13:34:05">2024-04-01</time></span></div></div><h1 class="title is-3 is-size-4-mobile">计算机组成原理笔记</h1><div class="content"><blockquote>
+<p>计算机组成原理笔记</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="Chapter4-指令系统"><a href="#Chapter4-指令系统" class="headerlink" title="Chapter4 指令系统"></a>Chapter4 指令系统</h1><h2 id="指令格式设计"><a href="#指令格式设计" class="headerlink" title="指令格式设计"></a>指令格式设计</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><ol>
+<li>操作码</li>
+<li>源操作数&#x2F;其地址or立即数：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li>
+<li>结果的地址：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li>
+<li>下条地址：通常隐含在PC中（按顺序执行时，下条地址为PC+地址长度）转移指令则跳转到给出的地址。</li>
+</ol>
+<blockquote>
+<p>根据给出的地址个数，分为三、二、单、零地址指令</p>
+<ol>
+<li>三：双目运算符两个源操作数地址和一个结果地址</li>
+<li>二：双目运算符两个源操作数，其中一个作为结果地址</li>
+<li>一：（取反&#x2F;负）既是操作数地址也是结果地址</li>
+<li>零地址：一种是无需，or栈型指令的操作数在栈顶，故不需要</li>
+</ol>
+</blockquote>
+<h3 id="指令格式设计原则"><a href="#指令格式设计原则" class="headerlink" title="指令格式设计原则"></a>指令格式设计原则</h3><ol>
+<li>指令尽量短</li>
+<li>足够操作码位数</li>
+<li>指令长度是字节的整数倍</li>
+<li>合理选择地址字段个数</li>
+<li>指令应尽量规整</li>
+</ol>
+<h2 id="指令系统设计"><a href="#指令系统设计" class="headerlink" title="指令系统设计"></a>指令系统设计</h2><ol>
+<li>完备性完整性（指令的操作类型）</li>
+<li>兼容性（兼容以前机器的指令）</li>
+<li>均匀性（多种数据类型eg：三种整型，两种浮点）</li>
+<li>可扩充性（预留一定编码空间，方便扩充）</li>
+</ol>
+<h3 id="基本设计问题"><a href="#基本设计问题" class="headerlink" title="基本设计问题"></a>基本设计问题</h3><h3 id="操作数类型"><a href="#操作数类型" class="headerlink" title="操作数类型"></a>操作数类型</h3><ol>
+<li>指针以及地址</li>
+<li>数值数据</li>
+<li>位、位串、字符以及字符串</li>
+</ol>
+<h3 id="寻址方式"><a href="#寻址方式" class="headerlink" title="*寻址方式"></a>*寻址方式</h3><blockquote>
+<p>注意，一条指令若有两个或两个以上的地址码时，各地址码可采用不同的寻址方式。例如，源地址采用一种寻址方式，而目的地址采用另一种寻址方式。</p>
+</blockquote>
+<ol>
+<li><p>立即寻址：指令直接给出操作数本身</p>
+</li>
+<li><p>直接寻址：指令中给出操作数的有效地址（直接&#x2F;绝对地址）</p>
+</li>
+<li><p>间接寻址：给出操作数的地址的地址（可多重）<img src="https://picstorage.danielniu.me/imgs/202404012159712.png"></p>
+</li>
+<li><p>寄存器寻址：地址码是操作数所在寄存器编号</p>
+<blockquote>
+<ol>
+<li>寄存器地址断，故寄存器寻址指令短</li>
+<li>操作数已经在cpu，不访存，速度快</li>
+</ol>
+</blockquote>
+</li>
+<li><p>寄存器间接寻址：寄存器中存放操作数的有效地址，需要访存<img src="https://picstorage.danielniu.me/imgs/202404021407789.png"></p>
+</li>
+<li><p>变址寻址：线性表等，给出基准地址，（变址寄存器 I ）给出偏移量<img src="https://picstorage.danielniu.me/imgs/202404021407053.png"></p>
+<blockquote>
+<p>把变址寄存器Rx的内容与指令中给出的形式地址A相加，形成操作数有效地址，即EA&#x3D;(Rx)+A。Rx的内容称为变址值。<br>S&#x3D;((Rx)+A)</p>
+</blockquote>
+</li>
+<li><p>相对寻址：相对寻址是基址寻址的一种变通，由程序计数器PC提供基准地址，指令中的地址码字段作为位移量D，两者相加后得到操作数的有效地址，即 <code>EA=(PC)+D</code>。位移量指出的是操作数和现行指令之间的相对位置。</p>
+</li>
+</ol>
+<blockquote>
+<p>相对寻址方式的特点：</p>
+<ol>
+<li>操作数的地址不是固定的，它随着PC值的变化而变化，并且与指令地址之间总是相差一个固定值±D。当指令地址改变时，由于其位移量不变，使得操作数与指令在可用的存储区内一起移动，所以仍能保证程序的正确执行。采用PC相对寻址方式编写的程序可在主存中任意浮动，它放在主存的任何地方，所执行的效果都是一样的。</li>
+<li>由于指令中给出的位移量可正、可负，所以对于指令地址而言，操作数地址可能在指令地址之前或之后。</li>
+</ol>
+</blockquote>
+<p><img src="https://picstorage.danielniu.me/imgs/202404021407995.png"><br>8. 基址寻址：基址寄存器Rb的内容与指令中给出的位移量D相加，形成操作数有效地址，即EA&#x3D;(Rb)+D。基址寄存器的内容称为基址值。指令的地址码字段是一个位移量，位移量可正、可负。</p>
+<blockquote>
+<p>S&#x3D;((Rb)+D)</p>
+</blockquote>
+<p><img src="https://picstorage.danielniu.me/imgs/202404021407208.png"></p>
+<h4 id="Conclution"><a href="#Conclution" class="headerlink" title="Conclution"></a>Conclution</h4><p>寻址方式指如何在指令中表示要访问的内存地址。表2.4列出了计算机中常用的寻址方式，其中数组mem表示存储器，数组regs表示寄存器，mem[regs[Rn]]表示由寄存器Rn的值作为存储器地址所访问的存储器值。</p>
+<p>表 2.4: 常用寻址方式</p>
+<table>
+<thead>
+<tr>
+<th><strong>寻址方式</strong></th>
+<th><strong>格式</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>寄存器寻址（Register）</strong></td>
+<td><strong>ADD R1,R2</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+regs[R2]</strong></td>
+</tr>
+<tr>
+<td><strong>立即数寻址（Immediate）</strong></td>
+<td><strong>ADD R1,#2</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+2</strong></td>
+</tr>
+<tr>
+<td><strong>偏移量寻址（Displacement）</strong></td>
+<td><strong>ADD R1,100(R2)</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]]</strong></td>
+</tr>
+<tr>
+<td><strong>寄存器间接寻址（Reg.Indirect）</strong></td>
+<td><strong>ADD R1,(R2)</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td>
+</tr>
+<tr>
+<td><strong>变址寻址（Indexed）</strong></td>
+<td><strong>ADD R1,(R2+R3)</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]+regs[R3]]</strong></td>
+</tr>
+<tr>
+<td><strong>绝对寻址（Absolute）</strong></td>
+<td><strong>ADD R1,(100)</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[100]</strong></td>
+</tr>
+<tr>
+<td><strong>存储器间接寻址（Mem.Indirect）</strong></td>
+<td><strong>ADD R1,@(R2)</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[mem[regs[R2]]]</strong></td>
+</tr>
+<tr>
+<td><strong>自增量寻址（Autoincrement）</strong></td>
+<td><strong>ADD R1,(R2)+</strong></td>
+<td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]],regs[R2]&#x3D;regs[R2]+d</strong></td>
+</tr>
+<tr>
+<td><strong>自减量寻址（Autodecrement）</strong></td>
+<td><strong>ADD R1,-(R2)</strong></td>
+<td><strong>regs[R2]&#x3D;regs[R2]-d,regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td>
+</tr>
+<tr>
+<td><strong>比例变址寻址（Scaled）</strong></td>
+<td><strong>ADD R1,100(R2)(R3)</strong></td>
+<td>*<em>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]+regs[R3]<em>d]</em></em></td>
+</tr>
+</tbody></table>
+<h3 id="操作类型"><a href="#操作类型" class="headerlink" title="操作类型"></a>操作类型</h3><ol>
+<li>算数和逻辑运算指令：加减乘除&#x2F;比较&#x2F;加一减一&#x2F;位运算</li>
+<li>移位指令</li>
+<li>传送指令</li>
+<li>串指令</li>
+<li>顺序控制指令：转移、跳转、跳步、调用、返回</li>
+<li>CPU控制指令</li>
+<li>输入输出指令</li>
+</ol>
+<h3 id="操作码编码"><a href="#操作码编码" class="headerlink" title="操作码编码"></a>操作码编码</h3><ol>
+<li>定长操作码编码：</li>
+</ol>
+<blockquote>
+<p>长度固定，译码方便，执行指令速度快，但有信息冗余。</p>
+</blockquote>
+<ol>
+<li>扩展操作码编码：</li>
+</ol>
+<blockquote>
+<p>几种固定长度的格式，4-8-12，3-6-9等，多用于非规整性指令集</p>
+</blockquote>
+<h3 id="异常以及中断处理"><a href="#异常以及中断处理" class="headerlink" title="异常以及中断处理"></a>异常以及中断处理</h3><h4 id="异常-exception："><a href="#异常-exception：" class="headerlink" title="异常 exception："></a>异常 exception：</h4><p>也称为例外，执行时cpu内部发生的。</p>
+<ol>
+<li>故障：遇到终止程序执行。</li>
+<li>自陷：人为埋设，例如断点、单步追踪，处理结束返回下条继续执行。</li>
+<li>终止：特殊事件，每条指令执行完都检查有无中断指令，有则将 <code>下条指令</code>作为断点保存，并转到相应断点服务执行，结束后返回断点继续。<blockquote>
+<p>终止与指令执行无关，由CPU外部的I&#x2F;O部件通过专门的中断请求线向CPU请求</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="程序的机器级表示"><a href="#程序的机器级表示" class="headerlink" title="程序的机器级表示"></a>程序的机器级表示</h2><p>略</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>计算机组成原理笔记</p><p><a href="http://blog.danielniu.me/2024/04/01/计组Chapter4/">http://blog.danielniu.me/2024/04/01/计组Chapter4/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Daniel Niu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2024-04-01</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-04-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/"><span class="level-item">基于quatrus的verilog学习</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "be3bd96be86eb4a0c0610d3df9d37c8c",
+            repo: "NiuHK.github.io",
+            owner: "NiuHK",
+            clientID: "033643d93760c7549ef5",
+            clientSecret: "b082f7d7117bbd41d66e0176376cd9b09bb36adb",
+            admin: ["NiuHK"],
+            createIssueManually: false,
+            distractionFreeMode: true,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/head.png" alt="Daniel Niu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Daniel Niu</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1" style="color: hsl(30, 100%, 50%)"></i><span>CN</span><h2 class="hitokoto" id="yiyancon" style="color: #0a0a0a"></h2><script type="text/javascript" src="https://international.v1.hitokoto.cn?encode=js&amp;amp;charset=utf-8&amp;amp;&amp;amp;c=j&amp;amp;c=k&amp;amp;c=l"></script></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">19</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">24</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/NiuHK" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/NiuHK"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Chapter4-指令系统"><span class="level-left"><span class="level-item">1</span><span class="level-item">Chapter4 指令系统</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#指令格式设计"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">指令格式设计</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#基本结构"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">基本结构</span></span></a></li><li><a class="level is-mobile" href="#指令格式设计原则"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">指令格式设计原则</span></span></a></li></ul></li><li><a class="level is-mobile" href="#指令系统设计"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">指令系统设计</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#基本设计问题"><span class="level-left"><span class="level-item">1.2.1</span><span class="level-item">基本设计问题</span></span></a></li><li><a class="level is-mobile" href="#操作数类型"><span class="level-left"><span class="level-item">1.2.2</span><span class="level-item">操作数类型</span></span></a></li><li><a class="level is-mobile" href="#寻址方式"><span class="level-left"><span class="level-item">1.2.3</span><span class="level-item">*寻址方式</span></span></a></li><li><a class="level is-mobile" href="#操作类型"><span class="level-left"><span class="level-item">1.2.4</span><span class="level-item">操作类型</span></span></a></li><li><a class="level is-mobile" href="#操作码编码"><span class="level-left"><span class="level-item">1.2.5</span><span class="level-item">操作码编码</span></span></a></li><li><a class="level is-mobile" href="#异常以及中断处理"><span class="level-left"><span class="level-item">1.2.6</span><span class="level-item">异常以及中断处理</span></span></a></li></ul></li><li><a class="level is-mobile" href="#程序的机器级表示"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">程序的机器级表示</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 Daniel Niu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="/js/custom.js" defer></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
