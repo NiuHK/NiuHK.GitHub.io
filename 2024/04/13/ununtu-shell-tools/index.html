@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>ununtu_shell_tools - HK&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content=" hsl(30, 100%, 50%)"><meta name="application-name" content="Daniel Niu"><meta name="msapplication-TileImage" content="img/icon1.svg"><meta name="msapplication-TileColor" content=" hsl(30, 100%, 50%)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Daniel Niu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="72x72" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="96x96" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="128x128" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="256x256" href="img/icon1.svg"><meta name="description" content="ubuntu 常用的shell命令合集"><meta property="og:type" content="article"><meta property="og:title" content="ununtu_shell_tools"><meta property="og:url" content="http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/"><meta property="og:site_name" content="HK&#039;s Blog"><meta property="og:description" content="ubuntu 常用的shell命令合集"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://img-blog.csdnimg.cn/76d8eb74b3cb4641a422a2db5b9f1db7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16"><meta property="og:image" content="https://img-blog.csdnimg.cn/1e10cdd410cf42fcada0f5eae81eff44.png"><meta property="og:image" content="https://img-blog.csdnimg.cn/c4800182349d44c09cc3673a31f7a482.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16"><meta property="og:image" content="https://img-blog.csdnimg.cn/61529556cb154f9aacfd00397feffcac.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16"><meta property="article:published_time" content="2024-04-13T13:40:33.000Z"><meta property="article:modified_time" content="2024-04-13T13:41:12.926Z"><meta property="article:author" content="Daniel Niu"><meta property="article:tag" content="环境配置"><meta property="article:tag" content="ubuntu"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://img-blog.csdnimg.cn/76d8eb74b3cb4641a422a2db5b9f1db7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/"},"headline":"ununtu_shell_tools","image":["https://img-blog.csdnimg.cn/1e10cdd410cf42fcada0f5eae81eff44.png"],"datePublished":"2024-04-13T13:40:33.000Z","dateModified":"2024-04-13T13:41:12.926Z","author":{"@type":"Person","name":"Daniel Niu"},"publisher":{"@type":"Organization","name":"HK's Blog","logo":{"@type":"ImageObject","url":"http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/img/icon1.svg"}},"description":"ubuntu 常用的shell命令合集"}</script><link rel="canonical" href="http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="HK's Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/AboutMe">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-04-13T13:40:33.000Z" title="4/13/2024, 1:40:33 PM">2024-04-13</time></span></div></div><h1 class="title is-3 is-size-4-mobile">ununtu_shell_tools</h1><div class="content"><blockquote>
+<p>ubuntu 常用的shell命令合集</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="Linux终端命令"><a href="#Linux终端命令" class="headerlink" title="Linux终端命令"></a>Linux终端命令</h1><h6 id="ubuntu安装插件命令"><a href="#ubuntu安装插件命令" class="headerlink" title="ubuntu安装插件命令"></a>ubuntu安装插件命令</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install 插件名称(tree)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看硬盘容量信息"><a href="#查看硬盘容量信息" class="headerlink" title="查看硬盘容量信息"></a>查看硬盘容量信息</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看当前目录文件夹占用磁盘空间</span></span><br><span class="line">du -sh *</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看内存使用情况"><a href="#查看内存使用情况" class="headerlink" title="查看内存使用情况"></a>查看内存使用情况</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/meminfo</span><br><span class="line">free -h</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看当前目录"><a href="#查看当前目录" class="headerlink" title="查看当前目录"></a>查看当前目录</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h6 id="创建文件-创建file-txt文件"><a href="#创建文件-创建file-txt文件" class="headerlink" title="创建文件(创建file.txt文件)"></a>创建文件(创建file.txt文件)</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch file.txt</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看帮助文档"><a href="#查看帮助文档" class="headerlink" title="查看帮助文档"></a>查看帮助文档</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">command --help</span><br><span class="line"></span><br><span class="line">man command</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h6 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h6><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>显示隐藏文件（以.开头的文件）</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>显示文件详细信息</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>显示文件大小 需要配合-l选项使用</td>
+</tr>
+</tbody></table>
+<h6 id="ls通配符"><a href="#ls通配符" class="headerlink" title="ls通配符"></a>ls通配符</h6><table>
+<thead>
+<tr>
+<th>通配符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td>代表任意个数字符</td>
+</tr>
+<tr>
+<td>?</td>
+<td>代表一个字符</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>标识匹配字符数组中的任意一个</td>
+</tr>
+<tr>
+<td>[abc]</td>
+<td>匹配a、b、c中任意一个字符</td>
+</tr>
+<tr>
+<td>[a-f] [0-9]</td>
+<td>匹配a到f范围内的任意一个字符</td>
+</tr>
+</tbody></table>
+<h6 id="mkdir递归创建文件夹"><a href="#mkdir递归创建文件夹" class="headerlink" title="mkdir递归创建文件夹"></a>mkdir递归创建文件夹</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p dir1/dir2/dir3</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h6 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h6><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>递归删除</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>强制删除。忽略不存在的文件，不提示确认</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>删除空目录</td>
+</tr>
+</tbody></table>
+<h6 id="拷贝和移动文件"><a href="#拷贝和移动文件" class="headerlink" title="拷贝和移动文件"></a>拷贝和移动文件</h6><h6 id="1、tree-目录名-以树状图列出文件目录结构"><a href="#1、tree-目录名-以树状图列出文件目录结构" class="headerlink" title="1、tree [目录名]: 以树状图列出文件目录结构"></a>1、tree [目录名]: 以树状图列出文件目录结构</h6><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-d</td>
+<td>只显示目录</td>
+</tr>
+</tbody></table>
+<h6 id="2、cp-源文件-目标文件-复制文件或者目录"><a href="#2、cp-源文件-目标文件-复制文件或者目录" class="headerlink" title="2、cp 源文件 目标文件: 复制文件或者目录"></a>2、cp 源文件 目标文件: 复制文件或者目录</h6><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-i</td>
+<td>覆盖文件前提示</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归复制该目录下所有子目录和文件，目标文件必须是一个目录名</td>
+</tr>
+</tbody></table>
+<h6 id="3、mv-源文件-目标文件"><a href="#3、mv-源文件-目标文件" class="headerlink" title="3、mv 源文件 目标文件:"></a>3、mv 源文件 目标文件:</h6><table>
+<thead>
+<tr>
+<th><strong>选项</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-i</td>
+<td>覆盖文件前提示</td>
+</tr>
+</tbody></table>
+<h6 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h6><h6 id="1、cat-文件名-查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）"><a href="#1、cat-文件名-查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）" class="headerlink" title="1、cat 文件名: 查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）"></a>1、cat 文件名: 查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）</h6><table>
+<thead>
+<tr>
+<th><strong>选项</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-b</td>
+<td>对非空行编号</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>对所有行编号</td>
+</tr>
+</tbody></table>
+<h6 id="2、more-文件名-分屏显示文件内容（分屏显示）"><a href="#2、more-文件名-分屏显示文件内容（分屏显示）" class="headerlink" title="2、more 文件名: 分屏显示文件内容（分屏显示）"></a>2、more 文件名: 分屏显示文件内容（分屏显示）</h6><table>
+<thead>
+<tr>
+<th>操作键</th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空格</td>
+<td>下一屏</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>下一行</td>
+</tr>
+<tr>
+<td>b</td>
+<td>回滚一屏</td>
+</tr>
+<tr>
+<td>f</td>
+<td>前滚一屏</td>
+</tr>
+<tr>
+<td>q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>&#x2F;搜索字符串</td>
+<td>搜索</td>
+</tr>
+</tbody></table>
+<h6 id="3、grep-搜索内容（搜索内容有关键词、空格需要加上双引号）-文件名-搜索文本文件内容"><a href="#3、grep-搜索内容（搜索内容有关键词、空格需要加上双引号）-文件名-搜索文本文件内容" class="headerlink" title="3、grep 搜索内容（搜索内容有关键词、空格需要加上双引号） 文件名: 搜索文本文件内容"></a>3、grep 搜索内容（搜索内容有关键词、空格需要加上双引号） 文件名: 搜索文本文件内容</h6><table>
+<thead>
+<tr>
+<th><strong>选项</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n</td>
+<td>显示行号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示不包含匹配文本的所有行</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略大小写</td>
+</tr>
+</tbody></table>
+<p>常用的两种模式查找</p>
+<p>^a：行首，搜索以a开头的行</p>
+<p>d$：行尾，搜索以d结尾的行</p>
+<h6 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h6><h6 id="1、echo-文字内容"><a href="#1、echo-文字内容" class="headerlink" title="1、echo 文字内容"></a>1、echo 文字内容</h6><p> echo会在终端中显示参数指定的文字,通常会和<strong>重定向</strong>联合使用</p>
+<h6 id="2、重定向-和"><a href="#2、重定向-和" class="headerlink" title="2、重定向&gt;和&gt;&gt;"></a>2、重定向&gt;和&gt;&gt;</h6><blockquote>
+<p>表示输出，会覆盖文件原有的内容 （将终端中输入的内容输出到文件中）</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/76d8eb74b3cb4641a422a2db5b9f1db7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<blockquote>
+<blockquote>
+<p>表示追加，会将内容追加到已有文件的末尾（将终端中输入的内容追加到文件末尾）</p>
+</blockquote>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/1e10cdd410cf42fcada0f5eae81eff44.png" alt="在这里插入图片描述"></p>
+<p> 所有命令终端输出结果都可以使用&gt;和&gt;&gt;重定向到文件中例如</p>
+<p><img src="https://img-blog.csdnimg.cn/c4800182349d44c09cc3673a31f7a482.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h6 id="3、管道"><a href="#3、管道" class="headerlink" title="3、管道|"></a>3、管道|</h6><p> Linux允许将一个命令的输出可以通过管道做为另一个命令的输入</p>
+<p> 可以理解现实生活中的管子，管子的一头塞东西进去，另一头取出来，这里的左右分为两端，左端塞东西(写)，右端取东西(读)</p>
+<p> 常用的管道命令有:</p>
+<p> more: 分屏显示内容</p>
+<p> grep: 在<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C&spm=1001.2101.3001.7020">命令执行</a>结果的基础上查询指定的文本</p>
+<p><img src="https://img-blog.csdnimg.cn/61529556cb154f9aacfd00397feffcac.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASlBBX3NvdWw=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h6 id="远程管理常用命令"><a href="#远程管理常用命令" class="headerlink" title="远程管理常用命令"></a>远程管理常用命令</h6><h6 id="关机重启"><a href="#关机重启" class="headerlink" title="关机重启"></a>关机重启</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">shutdown [选项] [时间]</span><br><span class="line"># 选项 -r 重新启动</span><br><span class="line">showdown -t now </span><br><span class="line">shutdown 20:10</span><br><span class="line">shutdown +10 #10分钟后关机</span><br><span class="line">shutdown -c  #取消关机</span><br><span class="line">123456</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看网卡信息"><a href="#查看网卡信息" class="headerlink" title="查看网卡信息"></a>查看网卡信息</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ip a</span><br><span class="line">ip address</span><br><span class="line">ifconfig</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h6 id="ssh命令-远程连接"><a href="#ssh命令-远程连接" class="headerlink" title="ssh命令(远程连接)"></a>ssh命令(远程连接)</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh [-p 端口号]  用户名@ip(或者域名)</span><br><span class="line">ssh root@ip</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<h6 id="scp-远程复制文件"><a href="#scp-远程复制文件" class="headerlink" title="scp(远程复制文件)"></a>scp(远程复制文件)</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scp [-P 端口号] 文件名称或路径 用户名@ip(或者域名):路径 # 复制本地文件到远程服务器</span><br><span class="line"># 选项 -r 若给出的源文件是目录文件 则scp将递归复制该目录下的所有子目录和文件，目标文件必须为一个目录名</span><br><span class="line">scp D:\dir\s.txt root@ip:/tmp</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp [-p 端口号]  用户名@ip(或者域名):文件名称或路径 路径 # 复制远程服务器文件到本地</span><br><span class="line">scp zhaosc@192.168.174.129:/home/zhaosc/demo/demo.txt  D:\</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<p>注：要确认安装ssh服务端和客户端</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br><span class="line"># 安装服务端</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<h6 id="ssh高级"><a href="#ssh高级" class="headerlink" title="ssh高级"></a>ssh高级</h6><h6 id="免密码登录"><a href="#免密码登录" class="headerlink" title="免密码登录"></a>免密码登录</h6><p> home目录下 .ssh隐藏文件夹</p>
+<p>known_<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=hosts%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020">hosts文件</a>存储授权信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1、配置公钥</span><br><span class="line">	执行ssh-keygen即可生成SSH钥匙，一路回车即可</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<p>id_rsa 和 id_rsa.pub 远程登陆时用来加密使用的文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2、上传公钥到服务器(id_rsa.pub)</span><br><span class="line">	执行ssh-copy-id -p port user@remote ，可以让远程服务器记住我们的公钥</span><br><span class="line">	ssh-copy-id -p 22 root@47.117.64.2</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<p>本地使用私钥对数据进行加密&#x2F;解密 服务器使用公钥对数据进行加密</p>
+<p><strong>以上命令在本地客户端执行 需要将本地客户端公钥（id_rsa.pub）添加到远程服务端的 ~&#x2F;.ssh&#x2F;authorized_keys中（可以手动添加，注意单行添加）</strong></p>
+<h6 id="配置别名（在本地客服端创建-ssh-config）"><a href="#配置别名（在本地客服端创建-ssh-config）" class="headerlink" title="配置别名（在本地客服端创建 .ssh&#x2F;config）"></a>配置别名（在本地客服端创建 .ssh&#x2F;config）</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.ssh/config配置信息如下</span><br><span class="line">---------------------------------</span><br><span class="line">Host aly # 别名</span><br><span class="line">	HostName ip # ip/域名</span><br><span class="line">	User root # 用户名</span><br><span class="line">	Port 22 # 端口号</span><br><span class="line">----------------------------------</span><br><span class="line">登录</span><br><span class="line">ssh aly</span><br><span class="line">复制文件</span><br><span class="line">scp -r aly:/usr/local/tomcat/webapps D:\</span><br><span class="line">---------------------------------</span><br><span class="line">123456789101112</span><br></pre></td></tr></table></figure>
+
+<h6 id="用户和权限"><a href="#用户和权限" class="headerlink" title="用户和权限"></a>用户和权限</h6><p>ls -l</p>
+<p>权限信息：</p>
+<p> 文件 -开头； 文件夹 d开头 ；r可读w可写x可执行 权限列为三列(三个一组) 依次是 用户权限 组权限 其他用户权限</p>
+<p>用户和组信息：</p>
+<p> 前面为用户后面为组</p>
+<h6 id="chmod命令"><a href="#chmod命令" class="headerlink" title="chmod命令"></a>chmod命令</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +/- rwx</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h6 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">groupadd 组名 # 添加组</span><br><span class="line">groupdel 组名 # 删除组</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>ununtu_shell_tools</p><p><a href="http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/">http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Daniel Niu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2024-04-13</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-04-13</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a><a class="link-muted mr-2" rel="tag" href="/tags/ubuntu/">ubuntu</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/04/13/ununtu%E5%AE%89%E8%A3%85node-js-LTS/"><span class="level-item">ununtu安装node.js_LTS</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "464fc5ce02f6702b170ff40fdea7e451",
+            repo: "NiuHK.github.io",
+            owner: "NiuHK",
+            clientID: "033643d93760c7549ef5",
+            clientSecret: "b082f7d7117bbd41d66e0176376cd9b09bb36adb",
+            admin: ["NiuHK"],
+            createIssueManually: false,
+            distractionFreeMode: true,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/head.png" alt="Daniel Niu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Daniel Niu</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1" style="color: hsl(30, 100%, 50%)"></i><span>CN</span><h2 class="hitokoto" id="yiyancon" style="color: #0a0a0a"></h2><script type="text/javascript" src="https://international.v1.hitokoto.cn?encode=js&amp;amp;charset=utf-8&amp;amp;&amp;amp;c=j&amp;amp;c=k&amp;amp;c=l"></script></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/NiuHK" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/NiuHK"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Linux终端命令"><span class="level-left"><span class="level-item">1</span><span class="level-item">Linux终端命令</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#ubuntu安装插件命令"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">ubuntu安装插件命令</span></span></a></li><li><a class="level is-mobile" href="#查看硬盘容量信息"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">查看硬盘容量信息</span></span></a></li><li><a class="level is-mobile" href="#查看内存使用情况"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">查看内存使用情况</span></span></a></li><li><a class="level is-mobile" href="#查看当前目录"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">查看当前目录</span></span></a></li><li><a class="level is-mobile" href="#创建文件-创建file-txt文件"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">创建文件(创建file.txt文件)</span></span></a></li><li><a class="level is-mobile" href="#查看帮助文档"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">查看帮助文档</span></span></a></li><li><a class="level is-mobile" href="#ls命令"><span class="level-left"><span class="level-item">1.7</span><span class="level-item">ls命令</span></span></a></li><li><a class="level is-mobile" href="#ls通配符"><span class="level-left"><span class="level-item">1.8</span><span class="level-item">ls通配符</span></span></a></li><li><a class="level is-mobile" href="#mkdir递归创建文件夹"><span class="level-left"><span class="level-item">1.9</span><span class="level-item">mkdir递归创建文件夹</span></span></a></li><li><a class="level is-mobile" href="#rm命令"><span class="level-left"><span class="level-item">1.10</span><span class="level-item">rm命令</span></span></a></li><li><a class="level is-mobile" href="#拷贝和移动文件"><span class="level-left"><span class="level-item">1.11</span><span class="level-item">拷贝和移动文件</span></span></a></li><li><a class="level is-mobile" href="#1、tree-目录名-以树状图列出文件目录结构"><span class="level-left"><span class="level-item">1.12</span><span class="level-item">1、tree [目录名]: 以树状图列出文件目录结构</span></span></a></li><li><a class="level is-mobile" href="#2、cp-源文件-目标文件-复制文件或者目录"><span class="level-left"><span class="level-item">1.13</span><span class="level-item">2、cp 源文件 目标文件: 复制文件或者目录</span></span></a></li><li><a class="level is-mobile" href="#3、mv-源文件-目标文件"><span class="level-left"><span class="level-item">1.14</span><span class="level-item">3、mv 源文件 目标文件:</span></span></a></li><li><a class="level is-mobile" href="#查看文件内容"><span class="level-left"><span class="level-item">1.15</span><span class="level-item">查看文件内容</span></span></a></li><li><a class="level is-mobile" href="#1、cat-文件名-查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）"><span class="level-left"><span class="level-item">1.16</span><span class="level-item">1、cat 文件名: 查看文件内容、创建文件、文件合并、追加文件内容等功能（一次完整显示）</span></span></a></li><li><a class="level is-mobile" href="#2、more-文件名-分屏显示文件内容（分屏显示）"><span class="level-left"><span class="level-item">1.17</span><span class="level-item">2、more 文件名: 分屏显示文件内容（分屏显示）</span></span></a></li><li><a class="level is-mobile" href="#3、grep-搜索内容（搜索内容有关键词、空格需要加上双引号）-文件名-搜索文本文件内容"><span class="level-left"><span class="level-item">1.18</span><span class="level-item">3、grep 搜索内容（搜索内容有关键词、空格需要加上双引号） 文件名: 搜索文本文件内容</span></span></a></li><li><a class="level is-mobile" href="#其他命令"><span class="level-left"><span class="level-item">1.19</span><span class="level-item">其他命令</span></span></a></li><li><a class="level is-mobile" href="#1、echo-文字内容"><span class="level-left"><span class="level-item">1.20</span><span class="level-item">1、echo 文字内容</span></span></a></li><li><a class="level is-mobile" href="#2、重定向-和"><span class="level-left"><span class="level-item">1.21</span><span class="level-item">2、重定向&gt;和&gt;&gt;</span></span></a></li><li><a class="level is-mobile" href="#3、管道"><span class="level-left"><span class="level-item">1.22</span><span class="level-item">3、管道|</span></span></a></li><li><a class="level is-mobile" href="#远程管理常用命令"><span class="level-left"><span class="level-item">1.23</span><span class="level-item">远程管理常用命令</span></span></a></li><li><a class="level is-mobile" href="#关机重启"><span class="level-left"><span class="level-item">1.24</span><span class="level-item">关机重启</span></span></a></li><li><a class="level is-mobile" href="#查看网卡信息"><span class="level-left"><span class="level-item">1.25</span><span class="level-item">查看网卡信息</span></span></a></li><li><a class="level is-mobile" href="#ssh命令-远程连接"><span class="level-left"><span class="level-item">1.26</span><span class="level-item">ssh命令(远程连接)</span></span></a></li><li><a class="level is-mobile" href="#scp-远程复制文件"><span class="level-left"><span class="level-item">1.27</span><span class="level-item">scp(远程复制文件)</span></span></a></li><li><a class="level is-mobile" href="#ssh高级"><span class="level-left"><span class="level-item">1.28</span><span class="level-item">ssh高级</span></span></a></li><li><a class="level is-mobile" href="#免密码登录"><span class="level-left"><span class="level-item">1.29</span><span class="level-item">免密码登录</span></span></a></li><li><a class="level is-mobile" href="#配置别名（在本地客服端创建-ssh-config）"><span class="level-left"><span class="level-item">1.30</span><span class="level-item">配置别名（在本地客服端创建 .ssh/config）</span></span></a></li><li><a class="level is-mobile" href="#用户和权限"><span class="level-left"><span class="level-item">1.31</span><span class="level-item">用户和权限</span></span></a></li><li><a class="level is-mobile" href="#chmod命令"><span class="level-left"><span class="level-item">1.32</span><span class="level-item">chmod命令</span></span></a></li><li><a class="level is-mobile" href="#用户组管理"><span class="level-left"><span class="level-item">1.33</span><span class="level-item">用户组管理</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 Daniel Niu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="/js/custom.js" defer></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
