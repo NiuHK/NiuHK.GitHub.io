@@ -3,11 +3,11 @@
   <title>HK&#39;s Blog</title>
   
   
-  <link href="http://blog.danielniu.me/atom.xml" rel="self"/>
+  <link href="http://blog.212676.xyz/atom.xml" rel="self"/>
   
-  <link href="http://blog.danielniu.me/"/>
+  <link href="http://blog.212676.xyz/"/>
   <updated>2024-04-13T13:41:12.926Z</updated>
-  <id>http://blog.danielniu.me/</id>
+  <id>http://blog.212676.xyz/</id>
   
   <author>
     <name>Daniel Niu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ununtu_shell_tools</title>
-    <link href="http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/"/>
-    <id>http://blog.danielniu.me/2024/04/13/ununtu-shell-tools/</id>
+    <link href="http://blog.212676.xyz/2024/04/13/ununtu-shell-tools/"/>
+    <id>http://blog.212676.xyz/2024/04/13/ununtu-shell-tools/</id>
     <published>2024-04-13T13:40:33.000Z</published>
     <updated>2024-04-13T13:41:12.926Z</updated>
     
@@ -33,16 +33,16 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="ubuntu" scheme="http://blog.danielniu.me/tags/ubuntu/"/>
+    <category term="ubuntu" scheme="http://blog.212676.xyz/tags/ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>ununtu安装node.js_LTS</title>
-    <link href="http://blog.danielniu.me/2024/04/13/ununtu%E5%AE%89%E8%A3%85node-js-LTS/"/>
-    <id>http://blog.danielniu.me/2024/04/13/ununtu%E5%AE%89%E8%A3%85node-js-LTS/</id>
+    <link href="http://blog.212676.xyz/2024/04/13/ununtu%E5%AE%89%E8%A3%85node-js-LTS/"/>
+    <id>http://blog.212676.xyz/2024/04/13/ununtu%E5%AE%89%E8%A3%85node-js-LTS/</id>
     <published>2024-04-13T13:31:45.000Z</published>
     <updated>2024-04-13T13:33:01.137Z</updated>
     
@@ -56,16 +56,16 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="ubuntu" scheme="http://blog.danielniu.me/tags/ubuntu/"/>
+    <category term="ubuntu" scheme="http://blog.212676.xyz/tags/ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>Vmware 无ui启动/停止 虚拟机</title>
-    <link href="http://blog.danielniu.me/2024/04/13/Vmware-UbuntuServer-noui-install/"/>
-    <id>http://blog.danielniu.me/2024/04/13/Vmware-UbuntuServer-noui-install/</id>
+    <link href="http://blog.212676.xyz/2024/04/13/Vmware-UbuntuServer-noui-install/"/>
+    <id>http://blog.212676.xyz/2024/04/13/Vmware-UbuntuServer-noui-install/</id>
     <published>2024-04-13T13:28:36.000Z</published>
     <updated>2024-04-13T13:43:31.576Z</updated>
     
@@ -79,20 +79,20 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="ubuntu" scheme="http://blog.danielniu.me/tags/ubuntu/"/>
+    <category term="ubuntu" scheme="http://blog.212676.xyz/tags/ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>计算机组成原理笔记</title>
-    <link href="http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/"/>
-    <id>http://blog.danielniu.me/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/</id>
-    <published>2024-04-01T05:34:05.000Z</published>
-    <updated>2024-04-02T06:09:43.814Z</updated>
+    <link href="http://blog.212676.xyz/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/"/>
+    <id>http://blog.212676.xyz/2024/04/01/%E8%AE%A1%E7%BB%84Chapter4/</id>
+    <published>2024-04-01T13:34:05.000Z</published>
+    <updated>2024-05-06T09:41:22.296Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>计算机组成原理笔记</p></blockquote><span id="more"></span><h1 id="Chapter4-指令系统"><a href="#Chapter4-指令系统" class="headerlink" title="Chapter4 指令系统"></a>Chapter4 指令系统</h1><h2 id="指令格式设计"><a href="#指令格式设计" class="headerlink" title="指令格式设计"></a>指令格式设计</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><ol><li>操作码</li><li>源操作数&#x2F;其地址or立即数：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li><li>结果的地址：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li><li>下条地址：通常隐含在PC中（按顺序执行时，下条地址为PC+地址长度）转移指令则跳转到给出的地址。</li></ol><blockquote><p>根据给出的地址个数，分为三、二、单、零地址指令</p><ol><li>三：双目运算符两个源操作数地址和一个结果地址</li><li>二：双目运算符两个源操作数，其中一个作为结果地址</li><li>一：（取反&#x2F;负）既是操作数地址也是结果地址</li><li>零地址：一种是无需，or栈型指令的操作数在栈顶，故不需要</li></ol></blockquote><h3 id="指令格式设计原则"><a href="#指令格式设计原则" class="headerlink" title="指令格式设计原则"></a>指令格式设计原则</h3><ol><li>指令尽量短</li><li>足够操作码位数</li><li>指令长度是字节的整数倍</li><li>合理选择地址字段个数</li><li>指令应尽量规整</li></ol><h2 id="指令系统设计"><a href="#指令系统设计" class="headerlink" title="指令系统设计"></a>指令系统设计</h2><ol><li>完备性完整性（指令的操作类型）</li><li>兼容性（兼容以前机器的指令）</li><li>均匀性（多种数据类型eg：三种整型，两种浮点）</li><li>可扩充性（预留一定编码空间，方便扩充）</li></ol><h3 id="基本设计问题"><a href="#基本设计问题" class="headerlink" title="基本设计问题"></a>基本设计问题</h3><h3 id="操作数类型"><a href="#操作数类型" class="headerlink" title="操作数类型"></a>操作数类型</h3><ol><li>指针以及地址</li><li>数值数据</li><li>位、位串、字符以及字符串</li></ol><h3 id="寻址方式"><a href="#寻址方式" class="headerlink" title="*寻址方式"></a>*寻址方式</h3><blockquote><p>注意，一条指令若有两个或两个以上的地址码时，各地址码可采用不同的寻址方式。例如，源地址采用一种寻址方式，而目的地址采用另一种寻址方式。</p></blockquote><ol><li><p>立即寻址：指令直接给出操作数本身</p></li><li><p>直接寻址：指令中给出操作数的有效地址（直接&#x2F;绝对地址）</p></li><li><p>间接寻址：给出操作数的地址的地址（可多重）<img src="https://picstorage.danielniu.me/imgs/202404012159712.png"></p></li><li><p>寄存器寻址：地址码是操作数所在寄存器编号</p><blockquote><ol><li>寄存器地址断，故寄存器寻址指令短</li><li>操作数已经在cpu，不访存，速度快</li></ol></blockquote></li><li><p>寄存器间接寻址：寄存器中存放操作数的有效地址，需要访存<img src="https://picstorage.danielniu.me/imgs/202404021407789.png"></p></li><li><p>变址寻址：线性表等，给出基准地址，（变址寄存器 I ）给出偏移量<img src="https://picstorage.danielniu.me/imgs/202404021407053.png"></p><blockquote><p>把变址寄存器Rx的内容与指令中给出的形式地址A相加，形成操作数有效地址，即EA&#x3D;(Rx)+A。Rx的内容称为变址值。<br>S&#x3D;((Rx)+A)</p></blockquote></li><li><p>相对寻址：相对寻址是基址寻址的一种变通，由程序计数器PC提供基准地址，指令中的地址码字段作为位移量D，两者相加后得到操作数的有效地址，即 <code>EA=(PC)+D</code>。位移量指出的是操作数和现行指令之间的相对位置。</p></li></ol><blockquote><p>相对寻址方式的特点：</p><ol><li>操作数的地址不是固定的，它随着PC值的变化而变化，并且与指令地址之间总是相差一个固定值±D。当指令地址改变时，由于其位移量不变，使得操作数与指令在可用的存储区内一起移动，所以仍能保证程序的正确执行。采用PC相对寻址方式编写的程序可在主存中任意浮动，它放在主存的任何地方，所执行的效果都是一样的。</li><li>由于指令中给出的位移量可正、可负，所以对于指令地址而言，操作数地址可能在指令地址之前或之后。</li></ol></blockquote><p><img src="https://picstorage.danielniu.me/imgs/202404021407995.png"><br>8. 基址寻址：基址寄存器Rb的内容与指令中给出的位移量D相加，形成操作数有效地址，即EA&#x3D;(Rb)+D。基址寄存器的内容称为基址值。指令的地址码字段是一个位移量，位移量可正、可负。</p><blockquote><p>S&#x3D;((Rb)+D)</p></blockquote><p><img src="https://picstorage.danielniu.me/imgs/202404021407208.png"></p><h4 id="Conclution"><a href="#Conclution" class="headerlink" title="Conclution"></a>Conclution</h4><p>寻址方式指如何在指令中表示要访问的内存地址。表2.4列出了计算机中常用的寻址方式，其中数组mem表示存储器，数组regs表示寄存器，mem[regs[Rn]]表示由寄存器Rn的值作为存储器地址所访问的存储器值。</p><p>表 2.4: 常用寻址方式</p><table><thead><tr><th><strong>寻址方式</strong></th><th><strong>格式</strong></th><th><strong>含义</strong></th></tr></thead><tbody><tr><td><strong>寄存器寻址（Register）</strong></td><td><strong>ADD R1,R2</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+regs[R2]</strong></td></tr><tr><td><strong>立即数寻址（Immediate）</strong></td><td><strong>ADD R1,#2</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+2</strong></td></tr><tr><td><strong>偏移量寻址（Displacement）</strong></td><td><strong>ADD R1,100(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]]</strong></td></tr><tr><td><strong>寄存器间接寻址（Reg.Indirect）</strong></td><td><strong>ADD R1,(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td></tr><tr><td><strong>变址寻址（Indexed）</strong></td><td><strong>ADD R1,(R2+R3)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]+regs[R3]]</strong></td></tr><tr><td><strong>绝对寻址（Absolute）</strong></td><td><strong>ADD R1,(100)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[100]</strong></td></tr><tr><td><strong>存储器间接寻址（Mem.Indirect）</strong></td><td><strong>ADD R1,@(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[mem[regs[R2]]]</strong></td></tr><tr><td><strong>自增量寻址（Autoincrement）</strong></td><td><strong>ADD R1,(R2)+</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]],regs[R2]&#x3D;regs[R2]+d</strong></td></tr><tr><td><strong>自减量寻址（Autodecrement）</strong></td><td><strong>ADD R1,-(R2)</strong></td><td><strong>regs[R2]&#x3D;regs[R2]-d,regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td></tr><tr><td><strong>比例变址寻址（Scaled）</strong></td><td><strong>ADD R1,100(R2)(R3)</strong></td><td>*<em>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]+regs[R3]<em>d]</em></em></td></tr></tbody></table><h3 id="操作类型"><a href="#操作类型" class="headerlink" title="操作类型"></a>操作类型</h3><ol><li>算数和逻辑运算指令：加减乘除&#x2F;比较&#x2F;加一减一&#x2F;位运算</li><li>移位指令</li><li>传送指令</li><li>串指令</li><li>顺序控制指令：转移、跳转、跳步、调用、返回</li><li>CPU控制指令</li><li>输入输出指令</li></ol><h3 id="操作码编码"><a href="#操作码编码" class="headerlink" title="操作码编码"></a>操作码编码</h3><ol><li>定长操作码编码：</li></ol><blockquote><p>长度固定，译码方便，执行指令速度快，但有信息冗余。</p></blockquote><ol><li>扩展操作码编码：</li></ol><blockquote><p>几种固定长度的格式，4-8-12，3-6-9等，多用于非规整性指令集</p></blockquote><h3 id="异常以及中断处理"><a href="#异常以及中断处理" class="headerlink" title="异常以及中断处理"></a>异常以及中断处理</h3><h4 id="异常-exception："><a href="#异常-exception：" class="headerlink" title="异常 exception："></a>异常 exception：</h4><p>也称为例外，执行时cpu内部发生的。</p><ol><li>故障：遇到终止程序执行。</li><li>自陷：人为埋设，例如断点、单步追踪，处理结束返回下条继续执行。</li><li>终止：特殊事件，每条指令执行完都检查有无中断指令，有则将 <code>下条指令</code>作为断点保存，并转到相应断点服务执行，结束后返回断点继续。<blockquote><p>终止与指令执行无关，由CPU外部的I&#x2F;O部件通过专门的中断请求线向CPU请求</p></blockquote></li></ol><h2 id="程序的机器级表示"><a href="#程序的机器级表示" class="headerlink" title="程序的机器级表示"></a>程序的机器级表示</h2><p>略</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>计算机组成原理笔记</p></blockquote><span id="more"></span><h1 id="Chapter4-指令系统"><a href="#Chapter4-指令系统" class="headerlink" title="Chapter4 指令系统"></a>Chapter4 指令系统</h1><h2 id="指令格式设计"><a href="#指令格式设计" class="headerlink" title="指令格式设计"></a>指令格式设计</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><ol><li>操作码</li><li>源操作数&#x2F;其地址or立即数：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li><li>结果的地址：储存单元地址&#x2F;寄存器编号&#x2F;io端口</li><li>下条地址：通常隐含在PC中（按顺序执行时，下条地址为PC+地址长度）转移指令则跳转到给出的地址。</li></ol><blockquote><p>根据给出的地址个数，分为三、二、单、零地址指令</p><ol><li>三：双目运算符两个源操作数地址和一个结果地址</li><li>二：双目运算符两个源操作数，其中一个作为结果地址</li><li>一：（取反&#x2F;负）既是操作数地址也是结果地址</li><li>零地址：一种是无需，or栈型指令的操作数在栈顶，故不需要</li></ol></blockquote><h3 id="指令格式设计原则"><a href="#指令格式设计原则" class="headerlink" title="指令格式设计原则"></a>指令格式设计原则</h3><ol><li>指令尽量短</li><li>足够操作码位数</li><li>指令长度是字节的整数倍</li><li>合理选择地址字段个数</li><li>指令应尽量规整</li></ol><h2 id="指令系统设计"><a href="#指令系统设计" class="headerlink" title="指令系统设计"></a>指令系统设计</h2><ol><li>完备性完整性（指令的操作类型）</li><li>兼容性（兼容以前机器的指令）</li><li>均匀性（多种数据类型eg：三种整型，两种浮点）</li><li>可扩充性（预留一定编码空间，方便扩充）</li></ol><h3 id="基本设计问题"><a href="#基本设计问题" class="headerlink" title="基本设计问题"></a>基本设计问题</h3><h3 id="操作数类型"><a href="#操作数类型" class="headerlink" title="操作数类型"></a>操作数类型</h3><ol><li>指针以及地址</li><li>数值数据</li><li>位、位串、字符以及字符串</li></ol><h3 id="寻址方式"><a href="#寻址方式" class="headerlink" title="*寻址方式"></a>*寻址方式</h3><blockquote><p>注意，一条指令若有两个或两个以上的地址码时，各地址码可采用不同的寻址方式。例如，源地址采用一种寻址方式，而目的地址采用另一种寻址方式。</p></blockquote><ol><li><p>立即寻址：指令直接给出操作数本身</p></li><li><p>直接寻址：指令中给出操作数的有效地址（直接&#x2F;绝对地址）</p></li><li><p>间接寻址：给出操作数的地址的地址（可多重）<img src="https://picstorage.212676.xyz/imgs/202404012159712.png"></p></li><li><p>寄存器寻址：地址码是操作数所在寄存器编号</p><blockquote><ol><li>寄存器地址断，故寄存器寻址指令短</li><li>操作数已经在cpu，不访存，速度快</li></ol></blockquote></li><li><p>寄存器间接寻址：寄存器中存放操作数的有效地址，需要访存<img src="https://picstorage.212676.xyz/imgs/202404021407789.png"></p></li><li><p>变址寻址：线性表等，给出基准地址，（变址寄存器 I ）给出偏移量<img src="https://picstorage.212676.xyz/imgs/202404021407053.png"></p><blockquote><p>把变址寄存器Rx的内容与指令中给出的形式地址A相加，形成操作数有效地址，即EA&#x3D;(Rx)+A。Rx的内容称为变址值。<br>S&#x3D;((Rx)+A)</p></blockquote></li><li><p>相对寻址：相对寻址是基址寻址的一种变通，由程序计数器PC提供基准地址，指令中的地址码字段作为位移量D，两者相加后得到操作数的有效地址，即 <code>EA=(PC)+D</code>。位移量指出的是操作数和现行指令之间的相对位置。</p></li></ol><blockquote><p>相对寻址方式的特点：</p><ol><li>操作数的地址不是固定的，它随着PC值的变化而变化，并且与指令地址之间总是相差一个固定值±D。当指令地址改变时，由于其位移量不变，使得操作数与指令在可用的存储区内一起移动，所以仍能保证程序的正确执行。采用PC相对寻址方式编写的程序可在主存中任意浮动，它放在主存的任何地方，所执行的效果都是一样的。</li><li>由于指令中给出的位移量可正、可负，所以对于指令地址而言，操作数地址可能在指令地址之前或之后。</li></ol></blockquote><p><img src="https://picstorage.212676.xyz/imgs/202404021407995.png"><br>8. 基址寻址：基址寄存器Rb的内容与指令中给出的位移量D相加，形成操作数有效地址，即EA&#x3D;(Rb)+D。基址寄存器的内容称为基址值。指令的地址码字段是一个位移量，位移量可正、可负。</p><blockquote><p>S&#x3D;((Rb)+D)</p></blockquote><p><img src="https://picstorage.212676.xyz/imgs/202404021407208.png"></p><h4 id="Conclution"><a href="#Conclution" class="headerlink" title="Conclution"></a>Conclution</h4><p>寻址方式指如何在指令中表示要访问的内存地址。表2.4列出了计算机中常用的寻址方式，其中数组mem表示存储器，数组regs表示寄存器，mem[regs[Rn]]表示由寄存器Rn的值作为存储器地址所访问的存储器值。</p><p>表 2.4: 常用寻址方式</p><table><thead><tr><th><strong>寻址方式</strong></th><th><strong>格式</strong></th><th><strong>含义</strong></th></tr></thead><tbody><tr><td><strong>寄存器寻址（Register）</strong></td><td><strong>ADD R1,R2</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+regs[R2]</strong></td></tr><tr><td><strong>立即数寻址（Immediate）</strong></td><td><strong>ADD R1,#2</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+2</strong></td></tr><tr><td><strong>偏移量寻址（Displacement）</strong></td><td><strong>ADD R1,100(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]]</strong></td></tr><tr><td><strong>寄存器间接寻址（Reg.Indirect）</strong></td><td><strong>ADD R1,(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td></tr><tr><td><strong>变址寻址（Indexed）</strong></td><td><strong>ADD R1,(R2+R3)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]+regs[R3]]</strong></td></tr><tr><td><strong>绝对寻址（Absolute）</strong></td><td><strong>ADD R1,(100)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[100]</strong></td></tr><tr><td><strong>存储器间接寻址（Mem.Indirect）</strong></td><td><strong>ADD R1,@(R2)</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[mem[regs[R2]]]</strong></td></tr><tr><td><strong>自增量寻址（Autoincrement）</strong></td><td><strong>ADD R1,(R2)+</strong></td><td><strong>regs[R1]&#x3D;regs[R1]+mem[regs[R2]],regs[R2]&#x3D;regs[R2]+d</strong></td></tr><tr><td><strong>自减量寻址（Autodecrement）</strong></td><td><strong>ADD R1,-(R2)</strong></td><td><strong>regs[R2]&#x3D;regs[R2]-d,regs[R1]&#x3D;regs[R1]+mem[regs[R2]]</strong></td></tr><tr><td><strong>比例变址寻址（Scaled）</strong></td><td><strong>ADD R1,100(R2)(R3)</strong></td><td>*<em>regs[R1]&#x3D;regs[R1]+mem[100+regs[R2]+regs[R3]<em>d]</em></em></td></tr></tbody></table><h3 id="操作类型"><a href="#操作类型" class="headerlink" title="操作类型"></a>操作类型</h3><ol><li>算数和逻辑运算指令：加减乘除&#x2F;比较&#x2F;加一减一&#x2F;位运算</li><li>移位指令</li><li>传送指令</li><li>串指令</li><li>顺序控制指令：转移、跳转、跳步、调用、返回</li><li>CPU控制指令</li><li>输入输出指令</li></ol><h3 id="操作码编码"><a href="#操作码编码" class="headerlink" title="操作码编码"></a>操作码编码</h3><ol><li>定长操作码编码：</li></ol><blockquote><p>长度固定，译码方便，执行指令速度快，但有信息冗余。</p></blockquote><ol><li>扩展操作码编码：</li></ol><blockquote><p>几种固定长度的格式，4-8-12，3-6-9等，多用于非规整性指令集</p></blockquote><h3 id="异常以及中断处理"><a href="#异常以及中断处理" class="headerlink" title="异常以及中断处理"></a>异常以及中断处理</h3><h4 id="异常-exception："><a href="#异常-exception：" class="headerlink" title="异常 exception："></a>异常 exception：</h4><p>也称为例外，执行时cpu内部发生的。</p><ol><li>故障：遇到终止程序执行。</li><li>自陷：人为埋设，例如断点、单步追踪，处理结束返回下条继续执行。</li><li>终止：特殊事件，每条指令执行完都检查有无中断指令，有则将 <code>下条指令</code>作为断点保存，并转到相应断点服务执行，结束后返回断点继续。<blockquote><p>终止与指令执行无关，由CPU外部的I&#x2F;O部件通过专门的中断请求线向CPU请求</p></blockquote></li></ol><h2 id="程序的机器级表示"><a href="#程序的机器级表示" class="headerlink" title="程序的机器级表示"></a>程序的机器级表示</h2><p>略</p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -102,16 +102,16 @@
     
     
     
-    <category term="计算机组成原理" scheme="http://blog.danielniu.me/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    <category term="计算机组成原理" scheme="http://blog.212676.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
     
-    <category term="笔记" scheme="http://blog.danielniu.me/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="http://blog.212676.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>基于quatrus的verilog学习</title>
-    <link href="http://blog.danielniu.me/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://blog.danielniu.me/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/</id>
+    <link href="http://blog.212676.xyz/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://blog.212676.xyz/2024/03/28/%E5%9F%BA%E4%BA%8Equatrus%E7%9A%84verilog%E5%AD%A6%E4%B9%A0/</id>
     <published>2024-03-28T05:42:53.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -125,28 +125,28 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="verilog" scheme="http://blog.danielniu.me/tags/verilog/"/>
+    <category term="verilog" scheme="http://blog.212676.xyz/tags/verilog/"/>
     
-    <category term="vscode" scheme="http://blog.danielniu.me/tags/vscode/"/>
+    <category term="vscode" scheme="http://blog.212676.xyz/tags/vscode/"/>
     
-    <category term="破解软件" scheme="http://blog.danielniu.me/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/"/>
+    <category term="破解软件" scheme="http://blog.212676.xyz/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/"/>
     
-    <category term="quartus" scheme="http://blog.danielniu.me/tags/quartus/"/>
+    <category term="quartus" scheme="http://blog.212676.xyz/tags/quartus/"/>
     
-    <category term="modelsim" scheme="http://blog.danielniu.me/tags/modelsim/"/>
+    <category term="modelsim" scheme="http://blog.212676.xyz/tags/modelsim/"/>
     
   </entry>
   
   <entry>
     <title>MS_Office精简下载安装激活</title>
-    <link href="http://blog.danielniu.me/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/"/>
-    <id>http://blog.danielniu.me/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</id>
-    <published>2024-03-24T03:20:49.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/"/>
+    <id>http://blog.212676.xyz/2024/03/24/MS-Office%E7%B2%BE%E7%AE%80%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</id>
+    <published>2024-03-24T11:20:49.000Z</published>
+    <updated>2024-05-06T09:41:22.384Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>基于VL版本office的MS_Office精简下载安装激活</p></blockquote><span id="more"></span><p><a href="https://www.youtube.com/watch?v=VSjRx7Hoa60">YouTube视频</a></p><h1 id="下载官方部署器"><a href="#下载官方部署器" class="headerlink" title="下载官方部署器"></a>下载官方部署器</h1><p>访问官方部署器地址：<br><a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">https://www.microsoft.com/en-us/download/details.aspx?id=49117</a></p><p><img src="https://picstorage.danielniu.me/imgs/202403241859813.png"></p><p>直接点击download，下载，并运行。</p><p>选择一空文件夹，完成程序。</p><p><img src="https://picstorage.danielniu.me/imgs/202403241901381.png"></p><h1 id="下载部署自定义文件"><a href="#下载部署自定义文件" class="headerlink" title="下载部署自定义文件"></a>下载部署自定义文件</h1><p>访问自定义网址：<br><a href="https://config.office.com/deploymentsettings">https://config.office.com/deploymentsettings</a></p><p><img src="https://picstorage.danielniu.me/imgs/202403241902791.png"></p><p>选择: 64位 批量许可证版本的office套件，对应的visio、project（这俩还看起来挺有用的，不用的话选择无）其他产品选择 语言包</p><p>应用-&gt;选择需要的项目</p><p>语言-&gt;选择中文</p><p>剩下的全部默认</p><p>导出-&gt;保留当前设置，命名为config</p><p>下载该文件，并导入当刚刚的文件夹中</p><h1 id="下载、安装"><a href="#下载、安装" class="headerlink" title="下载、安装"></a>下载、安装</h1><p>管理员cmd，cd到刚刚的文件夹</p><p>运行 setup &#x2F;download config.xml</p><p>等待命令运行完毕（没有提示，等待弹出下一个输入框）</p><p>运行 setup &#x2F;configure config.xml</p><p>等待安装完成，重启，看是否激活</p><p>未激活就管理员cmd格式下cd C:\Program Files\Microsoft Office\Office16 重启并查看激活状态</p><p>还不行直接使用网上搜的kms激活VL版本office方法。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>基于VL版本office的MS_Office精简下载安装激活</p></blockquote><span id="more"></span><p><a href="https://www.youtube.com/watch?v=VSjRx7Hoa60">YouTube视频</a></p><h1 id="下载官方部署器"><a href="#下载官方部署器" class="headerlink" title="下载官方部署器"></a>下载官方部署器</h1><p>访问官方部署器地址：<br><a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">https://www.microsoft.com/en-us/download/details.aspx?id=49117</a></p><p><img src="https://picstorage.212676.xyz/imgs/202403241859813.png"></p><p>直接点击download，下载，并运行。</p><p>选择一空文件夹，完成程序。</p><p><img src="https://picstorage.212676.xyz/imgs/202403241901381.png"></p><h1 id="下载部署自定义文件"><a href="#下载部署自定义文件" class="headerlink" title="下载部署自定义文件"></a>下载部署自定义文件</h1><p>访问自定义网址：<br><a href="https://config.office.com/deploymentsettings">https://config.office.com/deploymentsettings</a></p><p><img src="https://picstorage.212676.xyz/imgs/202403241902791.png"></p><p>选择: 64位 批量许可证版本的office套件，对应的visio、project（这俩还看起来挺有用的，不用的话选择无）其他产品选择 语言包</p><p>应用-&gt;选择需要的项目</p><p>语言-&gt;选择中文</p><p>剩下的全部默认</p><p>导出-&gt;保留当前设置，命名为config</p><p>下载该文件，并导入当刚刚的文件夹中</p><h1 id="下载、安装"><a href="#下载、安装" class="headerlink" title="下载、安装"></a>下载、安装</h1><p>管理员cmd，cd到刚刚的文件夹</p><p>运行 setup &#x2F;download config.xml</p><p>等待命令运行完毕（没有提示，等待弹出下一个输入框）</p><p>运行 setup &#x2F;configure config.xml</p><p>等待安装完成，重启，看是否激活</p><p>未激活就管理员cmd格式下cd C:\Program Files\Microsoft Office\Office16 重启并查看激活状态</p><p>还不行直接使用网上搜的kms激活VL版本office方法。</p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -156,14 +156,14 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>【UltraISO】中文破解版</title>
-    <link href="http://blog.danielniu.me/2024/03/23/%E3%80%90UltraISO%E3%80%91%E4%B8%AD%E6%96%87%E7%A0%B4%E8%A7%A3%E7%89%88/"/>
-    <id>http://blog.danielniu.me/2024/03/23/%E3%80%90UltraISO%E3%80%91%E4%B8%AD%E6%96%87%E7%A0%B4%E8%A7%A3%E7%89%88/</id>
+    <link href="http://blog.212676.xyz/2024/03/23/%E3%80%90UltraISO%E3%80%91%E4%B8%AD%E6%96%87%E7%A0%B4%E8%A7%A3%E7%89%88/"/>
+    <id>http://blog.212676.xyz/2024/03/23/%E3%80%90UltraISO%E3%80%91%E4%B8%AD%E6%96%87%E7%A0%B4%E8%A7%A3%E7%89%88/</id>
     <published>2024-03-23T04:43:27.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -177,14 +177,14 @@
     
     
     
-    <category term="破解软件" scheme="http://blog.danielniu.me/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/"/>
+    <category term="破解软件" scheme="http://blog.212676.xyz/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>c++ &amp; Linux 操作系统进程相关操作</title>
-    <link href="http://blog.danielniu.me/2024/03/22/linux-cpp-progress/"/>
-    <id>http://blog.danielniu.me/2024/03/22/linux-cpp-progress/</id>
+    <link href="http://blog.212676.xyz/2024/03/22/linux-cpp-progress/"/>
+    <id>http://blog.212676.xyz/2024/03/22/linux-cpp-progress/</id>
     <published>2024-03-22T03:42:28.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -200,12 +200,12 @@
   
   <entry>
     <title>AcWing 796.子矩阵的和</title>
-    <link href="http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/"/>
-    <id>http://blog.danielniu.me/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/</id>
-    <published>2024-03-18T07:21:02.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/"/>
+    <id>http://blog.212676.xyz/2024/03/18/%E5%AD%90%E7%9F%A9%E9%98%B5%E7%9A%84%E5%92%8C/</id>
+    <published>2024-03-18T15:21:02.000Z</published>
+    <updated>2024-05-06T09:41:22.364Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>AcWing 796.子矩阵的和</p></blockquote><span id="more"></span><p>第二层矩阵存当前（0，0）-（x，y）和，求x1yx1-x2y2类似于求面积<br><img src="https://picstorage.danielniu.me/imgs/20240318231648.jpg" height="200" width="200" /><br>可理解为坡度(大概)<br><img src="https://picstorage.danielniu.me/imgs/20240318231647.jpg" height="200" width="200" /></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">100010</span>;</span><br><span class="line">ll v[N][<span class="number">1000</span>][<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,q;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">                cin&gt;&gt;v[j][i][<span class="number">0</span>];</span><br><span class="line">                v[j][i][<span class="number">1</span>]=v[j<span class="number">-1</span>][i][<span class="number">1</span>]+v[j][i<span class="number">-1</span>][<span class="number">1</span>]-v[j<span class="number">-1</span>][i<span class="number">-1</span>][<span class="number">1</span>]+v[j][i][<span class="number">0</span>];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> x1,y1,x2,y2,count;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)&#123;</span><br><span class="line">        count=<span class="number">0</span>;</span><br><span class="line">        cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        ll count=v[x2][y2][<span class="number">1</span>]-v[x2][y1<span class="number">-1</span>][<span class="number">1</span>]-v[x1<span class="number">-1</span>][y2][<span class="number">1</span>]+v[x1<span class="number">-1</span>][y1<span class="number">-1</span>][<span class="number">1</span>];</span><br><span class="line">        cout&lt;&lt;count&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>AcWing 796.子矩阵的和</p></blockquote><span id="more"></span><p>第二层矩阵存当前（0，0）-（x，y）和，求x1yx1-x2y2类似于求面积<br><img src="https://picstorage.212676.xyz/imgs/20240318231648.jpg" height="200" width="200" /><br>可理解为坡度(大概)<br><img src="https://picstorage.212676.xyz/imgs/20240318231647.jpg" height="200" width="200" /></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">100010</span>;</span><br><span class="line">ll v[N][<span class="number">1000</span>][<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,q;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">                cin&gt;&gt;v[j][i][<span class="number">0</span>];</span><br><span class="line">                v[j][i][<span class="number">1</span>]=v[j<span class="number">-1</span>][i][<span class="number">1</span>]+v[j][i<span class="number">-1</span>][<span class="number">1</span>]-v[j<span class="number">-1</span>][i<span class="number">-1</span>][<span class="number">1</span>]+v[j][i][<span class="number">0</span>];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> x1,y1,x2,y2,count;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)&#123;</span><br><span class="line">        count=<span class="number">0</span>;</span><br><span class="line">        cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        ll count=v[x2][y2][<span class="number">1</span>]-v[x2][y1<span class="number">-1</span>][<span class="number">1</span>]-v[x1<span class="number">-1</span>][y2][<span class="number">1</span>]+v[x1<span class="number">-1</span>][y1<span class="number">-1</span>][<span class="number">1</span>];</span><br><span class="line">        cout&lt;&lt;count&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -215,14 +215,14 @@
     
     
     
-    <category term="c++" scheme="http://blog.danielniu.me/tags/c/"/>
+    <category term="c++" scheme="http://blog.212676.xyz/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>费曼技巧</title>
-    <link href="http://blog.danielniu.me/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/"/>
-    <id>http://blog.danielniu.me/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/</id>
+    <link href="http://blog.212676.xyz/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/"/>
+    <id>http://blog.212676.xyz/2024/03/17/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/</id>
     <published>2024-03-17T08:16:20.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -241,12 +241,12 @@
   
   <entry>
     <title>LLM 学习笔记</title>
-    <link href="http://blog.danielniu.me/2024/03/12/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://blog.danielniu.me/2024/03/12/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2024-03-12T06:15:16.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/03/12/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://blog.212676.xyz/2024/03/12/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2024-03-12T14:15:16.000Z</published>
+    <updated>2024-05-06T09:41:22.380Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>大型语言模型（llm）是一种特殊的预训练语言模型，通过调整模型大小、预训练语料库和计算来获得。由于llm规模大，对大量文本数据进行预训练，表现出特殊的能力，能够在许多自然语言处理任务中不经过任何特定任务训练的情况下取得显著的性能。<br>llm的时代始于OpenAI的GPT-3模型，在ChatGPT和GPT4等模型的引入后，llm的流行程度呈指数级增长。<br>LLM 表现出根据相对较少量的提示或输入做出预测的非凡能力。LLM 可用于生成式人工智能，以根据采用人类语言的输入提示生成内容。</p></blockquote><span id="more"></span><h1 id="基于transformer架构的LLM："><a href="#基于transformer架构的LLM：" class="headerlink" title="基于transformer架构的LLM："></a>基于transformer架构的LLM：</h1><p>自注意力机制，关注词和当前输入序列的所有词的关系，提高训练速度</p><p><img src="https://picstorage.danielniu.me/imgs/20240312221224.png"></p><h2 id="文本token化"><a href="#文本token化" class="headerlink" title="文本token化"></a>文本token化</h2><p>每个被一个整数表示</p><p>传入嵌入层，每个token被一个向量表示（词向量），向量空间中可以表示更多相关性（多维度）</p><h2 id="位置编码"><a href="#位置编码" class="headerlink" title="位置编码"></a>位置编码</h2><p>代表词位置的位置向量与词向量组合，使模型同时理解词的意义以及在句中的关系</p><h2 id="编码器（多级串联-更深入了解）"><a href="#编码器（多级串联-更深入了解）" class="headerlink" title="编码器（多级串联-&gt;更深入了解）"></a>编码器（多级串联-&gt;更深入了解）</h2><p>多头自注意力机制-&gt; 词之间相关性表示权重</p><blockquote><p>有多头自注意力机制，用来关注文本不同特征方面（动词、名词），并行运算互不影响，每个头的权重是训练中调整的。</p></blockquote><p>位置编码的向量传入，加入自注意力机制的权重表示，输出（三种信息融合在向量里）向量。（同一个词，上下文不同表示不同）</p><p>前馈神经网络，增加模型表达能力</p><h2 id="解码器（生成）"><a href="#解码器（生成）" class="headerlink" title="解码器（生成）"></a>解码器（生成）</h2><p>一个特殊值（便于考虑之前已经生成的上文保持上下文连贯性）已生成的输出序列经过另一编码器，但使用 <code>带掩码的多头自注意力机制</code>，即自注意力头只关注当前词和其之前的词的关系权重，</p><blockquote><p>确保解码器生成文本遵循正确时间顺序</p></blockquote><p>编码器传出的向量（token的抽象表示）-&gt;多头自注意力</p><p>用来捕捉解码器即将产生成的输出以及编码器输入之间的关系，使输入序列信息融合到解码器输出中</p><p>前馈神经网络，增加模型表达能力</p><p><img src="https://picstorage.danielniu.me/imgs/20240312221223.png"></p><p>线性层，softmax层，转换解码器输出到词汇表概率分布（实现猜下一个词）</p><h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><p>仅解码器：掩码语言建模、情感分析 BERT</p><p>仅解码器：猜测上下文文本生成 GPT2、3</p><p>解码器解码器模型&#x2F; 序列到序列模型：翻译总结  T5、bart</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>大型语言模型（llm）是一种特殊的预训练语言模型，通过调整模型大小、预训练语料库和计算来获得。由于llm规模大，对大量文本数据进行预训练，表现出特殊的能力，能够在许多自然语言处理任务中不经过任何特定任务训练的情况下取得显著的性能。<br>llm的时代始于OpenAI的GPT-3模型，在ChatGPT和GPT4等模型的引入后，llm的流行程度呈指数级增长。<br>LLM 表现出根据相对较少量的提示或输入做出预测的非凡能力。LLM 可用于生成式人工智能，以根据采用人类语言的输入提示生成内容。</p></blockquote><span id="more"></span><h1 id="基于transformer架构的LLM："><a href="#基于transformer架构的LLM：" class="headerlink" title="基于transformer架构的LLM："></a>基于transformer架构的LLM：</h1><p>自注意力机制，关注词和当前输入序列的所有词的关系，提高训练速度</p><p><img src="https://picstorage.212676.xyz/imgs/20240312221224.png"></p><h2 id="文本token化"><a href="#文本token化" class="headerlink" title="文本token化"></a>文本token化</h2><p>每个被一个整数表示</p><p>传入嵌入层，每个token被一个向量表示（词向量），向量空间中可以表示更多相关性（多维度）</p><h2 id="位置编码"><a href="#位置编码" class="headerlink" title="位置编码"></a>位置编码</h2><p>代表词位置的位置向量与词向量组合，使模型同时理解词的意义以及在句中的关系</p><h2 id="编码器（多级串联-更深入了解）"><a href="#编码器（多级串联-更深入了解）" class="headerlink" title="编码器（多级串联-&gt;更深入了解）"></a>编码器（多级串联-&gt;更深入了解）</h2><p>多头自注意力机制-&gt; 词之间相关性表示权重</p><blockquote><p>有多头自注意力机制，用来关注文本不同特征方面（动词、名词），并行运算互不影响，每个头的权重是训练中调整的。</p></blockquote><p>位置编码的向量传入，加入自注意力机制的权重表示，输出（三种信息融合在向量里）向量。（同一个词，上下文不同表示不同）</p><p>前馈神经网络，增加模型表达能力</p><h2 id="解码器（生成）"><a href="#解码器（生成）" class="headerlink" title="解码器（生成）"></a>解码器（生成）</h2><p>一个特殊值（便于考虑之前已经生成的上文保持上下文连贯性）已生成的输出序列经过另一编码器，但使用 <code>带掩码的多头自注意力机制</code>，即自注意力头只关注当前词和其之前的词的关系权重，</p><blockquote><p>确保解码器生成文本遵循正确时间顺序</p></blockquote><p>编码器传出的向量（token的抽象表示）-&gt;多头自注意力</p><p>用来捕捉解码器即将产生成的输出以及编码器输入之间的关系，使输入序列信息融合到解码器输出中</p><p>前馈神经网络，增加模型表达能力</p><p><img src="https://picstorage.212676.xyz/imgs/20240312221223.png"></p><p>线性层，softmax层，转换解码器输出到词汇表概率分布（实现猜下一个词）</p><h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><p>仅解码器：掩码语言建模、情感分析 BERT</p><p>仅解码器：猜测上下文文本生成 GPT2、3</p><p>解码器解码器模型&#x2F; 序列到序列模型：翻译总结  T5、bart</p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -256,18 +256,18 @@
     
     
     
-    <category term="LLM" scheme="http://blog.danielniu.me/tags/LLM/"/>
+    <category term="LLM" scheme="http://blog.212676.xyz/tags/LLM/"/>
     
-    <category term="AI" scheme="http://blog.danielniu.me/tags/AI/"/>
+    <category term="AI" scheme="http://blog.212676.xyz/tags/AI/"/>
     
-    <category term="GPT" scheme="http://blog.danielniu.me/tags/GPT/"/>
+    <category term="GPT" scheme="http://blog.212676.xyz/tags/GPT/"/>
     
   </entry>
   
   <entry>
     <title>sym</title>
-    <link href="http://blog.danielniu.me/2024/03/11/sym/"/>
-    <id>http://blog.danielniu.me/2024/03/11/sym/</id>
+    <link href="http://blog.212676.xyz/2024/03/11/sym/"/>
+    <id>http://blog.212676.xyz/2024/03/11/sym/</id>
     <published>2024-03-11T04:18:22.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -286,8 +286,8 @@
   
   <entry>
     <title>大学生创新创业大赛筹备</title>
-    <link href="http://blog.danielniu.me/2024/03/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%A4%A7%E8%B5%9B%E7%AD%B9%E5%A4%87/"/>
-    <id>http://blog.danielniu.me/2024/03/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%A4%A7%E8%B5%9B%E7%AD%B9%E5%A4%87/</id>
+    <link href="http://blog.212676.xyz/2024/03/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%A4%A7%E8%B5%9B%E7%AD%B9%E5%A4%87/"/>
+    <id>http://blog.212676.xyz/2024/03/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%A4%A7%E8%B5%9B%E7%AD%B9%E5%A4%87/</id>
     <published>2024-03-11T03:12:13.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -305,8 +305,8 @@
   
   <entry>
     <title>Icarus主题的一些常用配置</title>
-    <link href="http://blog.danielniu.me/2024/03/09/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
-    <id>http://blog.danielniu.me/2024/03/09/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://blog.212676.xyz/2024/03/09/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.212676.xyz/2024/03/09/Icarus%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
     <published>2024-03-09T21:44:43.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -320,14 +320,14 @@
     
     
     
-    <category term="icarus" scheme="http://blog.danielniu.me/tags/icarus/"/>
+    <category term="icarus" scheme="http://blog.212676.xyz/tags/icarus/"/>
     
   </entry>
   
   <entry>
     <title>使用github codespace + github page + hexo 无服务器发布运行个人博客</title>
-    <link href="http://blog.danielniu.me/2024/03/08/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://blog.danielniu.me/2024/03/08/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://blog.212676.xyz/2024/03/08/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.212676.xyz/2024/03/08/%E4%BD%BF%E7%94%A8github-codespace-github-page-hexo-%E7%BA%BF%E4%B8%8A%E7%BC%96%E8%BE%91%E5%8F%91%E5%B8%83%E8%BF%90%E8%A1%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2024-03-08T19:14:43.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -341,24 +341,24 @@
     
     
     
-    <category term="Icarus" scheme="http://blog.danielniu.me/tags/Icarus/"/>
+    <category term="Icarus" scheme="http://blog.212676.xyz/tags/Icarus/"/>
     
-    <category term="blog" scheme="http://blog.danielniu.me/tags/blog/"/>
+    <category term="blog" scheme="http://blog.212676.xyz/tags/blog/"/>
     
-    <category term="hexo" scheme="http://blog.danielniu.me/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.212676.xyz/tags/hexo/"/>
     
-    <category term="codespace" scheme="http://blog.danielniu.me/tags/codespace/"/>
+    <category term="codespace" scheme="http://blog.212676.xyz/tags/codespace/"/>
     
   </entry>
   
   <entry>
     <title>使用giscus为blog添加评论系统</title>
-    <link href="http://blog.danielniu.me/2024/03/08/%E4%BD%BF%E7%94%A8giscus%E4%B8%BAblog%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://blog.danielniu.me/2024/03/08/%E4%BD%BF%E7%94%A8giscus%E4%B8%BAblog%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</id>
-    <published>2024-03-08T01:26:42.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/03/08/%E4%BD%BF%E7%94%A8giscus%E4%B8%BAblog%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://blog.212676.xyz/2024/03/08/%E4%BD%BF%E7%94%A8giscus%E4%B8%BAblog%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</id>
+    <published>2024-03-08T09:26:42.000Z</published>
+    <updated>2024-05-06T09:41:22.424Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>giscus指一个非常好用的由GitHub讨论支持的评论系统，它可以让你把仓库中的讨论整合到你的博客中。</p></blockquote><span id="more"></span><h2 id="如何使用-GitHub-讨论作为聊天系统"><a href="#如何使用-GitHub-讨论作为聊天系统" class="headerlink" title="如何使用 GitHub 讨论作为聊天系统"></a>如何使用 GitHub 讨论作为聊天系统</h2><p>为了将GitHub讨论整合到你的博客，我们将使用 giscus。<br><img src="https://picstorage.danielniu.me/imgs/03e29360d5cc429ca6d7d4062f2c5f83.png" alt="img"><br>giscus是一个由GitHub讨论支持的评论系统。它可以让你把仓库中的讨论整合到你的博客中。</p><p>你的读者可以在你的博客上留下评论，这些评论会同时出现在你的博客和你的代码库的讨论页面上。</p><h3 id="使用讨论区作为你的博客聊天系统的优势"><a href="#使用讨论区作为你的博客聊天系统的优势" class="headerlink" title="使用讨论区作为你的博客聊天系统的优势"></a>使用讨论区作为你的博客聊天系统的优势</h3><ul><li>它是完全免费的</li><li>没有广告或跟踪</li><li>它超级强大</li><li>你对评论有完全的控制权和完全的修改权。</li><li>有很多主题</li><li>它是相当可自定义的</li><li>你可以在你自己的服务器上自行托管</li></ul><p>请记住，此工具主要适用于开发者博客，因为大多数开发人员使用 GitHub。</p><h3 id="如何在你的博客中整合giscus"><a href="#如何在你的博客中整合giscus" class="headerlink" title="如何在你的博客中整合giscus"></a>如何在你的博客中整合giscus</h3><h4 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a>先决条件</h4><ul><li>一个博客（你必须能够获得源代码）</li><li>一个 GitHub 帐户</li><li>你选择的代码库必须是公开的</li></ul><p>首先，你需要为你的代码库启用讨论功能。</p><p>转到代码库 <code>Settings</code>-&gt; 在 <code>Features</code>部分下 -&gt; 勾选 <code>Discussions</code>框。<br><img src="https://picstorage.danielniu.me/imgs/8b8814e3fa45476fb4d6568951fbdc40.png" alt="img"><br>接下来，在你的代码库中安装giscus应用程序。<br>转到 <a href="https://github.com/apps/giscus">giscus主页</a>，按照提示操作，并仅授予对选定代码库的访问权限。<img src="https://picstorage.danielniu.me/imgs/f15fd586e4cd4f4b82dc7db826d12a48.png" alt="img"><br>现在是重要的部分：我们需要配置giscus小部件。</p><p>首先，进入giscus主页，滚动到 <code>Configuration</code>部分。</p><p>选择您的小部件语言，这是您想要显示小部件的语言。<br><img src="https://picstorage.danielniu.me/imgs/3b9ff0ea2bef46558b9d364bb0642af5.png" alt="img"><br>然后输入你的代码库名称和你的用户名，如用 <code>username/reponame</code>。<img src="https://picstorage.danielniu.me/imgs/4d4469acb1634b51a6b4633ec5454206.png"><br>对于页面↔️讨论映射，我建议选择 “讨论标题包含页面 <code>URL</code>”。但根据你的需要，选择最适合你的那一个。<br><img src="https://picstorage.danielniu.me/imgs/cc13493061bd436b94e79b63e4279b6a.png"><br>接下来，在你的GitHub 代码库上的讨论页面创建一个类别——比如 “Comments（评论）”——或者选择现有的类别。<br><img src="https://picstorage.danielniu.me/imgs/92d114d08dfb4e9b9594b17bb95d9702.png"><br><img src="https://picstorage.danielniu.me/imgs/8797a751ea66497da47e68e1260c4b1a.png">然后根据需要启用可选功能。</p><p>接下来，选择主题。不要担心，你可以通过编程来切换不同的主题。</p><p>最后，复制并粘贴生成的代码。</p><p>Giscus将根据你的设置生成一个脚本标签，你可以将其粘贴到你的代码中。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>giscus指一个非常好用的由GitHub讨论支持的评论系统，它可以让你把仓库中的讨论整合到你的博客中。</p></blockquote><span id="more"></span><h2 id="如何使用-GitHub-讨论作为聊天系统"><a href="#如何使用-GitHub-讨论作为聊天系统" class="headerlink" title="如何使用 GitHub 讨论作为聊天系统"></a>如何使用 GitHub 讨论作为聊天系统</h2><p>为了将GitHub讨论整合到你的博客，我们将使用 giscus。<br><img src="https://picstorage.212676.xyz/imgs/03e29360d5cc429ca6d7d4062f2c5f83.png" alt="img"><br>giscus是一个由GitHub讨论支持的评论系统。它可以让你把仓库中的讨论整合到你的博客中。</p><p>你的读者可以在你的博客上留下评论，这些评论会同时出现在你的博客和你的代码库的讨论页面上。</p><h3 id="使用讨论区作为你的博客聊天系统的优势"><a href="#使用讨论区作为你的博客聊天系统的优势" class="headerlink" title="使用讨论区作为你的博客聊天系统的优势"></a>使用讨论区作为你的博客聊天系统的优势</h3><ul><li>它是完全免费的</li><li>没有广告或跟踪</li><li>它超级强大</li><li>你对评论有完全的控制权和完全的修改权。</li><li>有很多主题</li><li>它是相当可自定义的</li><li>你可以在你自己的服务器上自行托管</li></ul><p>请记住，此工具主要适用于开发者博客，因为大多数开发人员使用 GitHub。</p><h3 id="如何在你的博客中整合giscus"><a href="#如何在你的博客中整合giscus" class="headerlink" title="如何在你的博客中整合giscus"></a>如何在你的博客中整合giscus</h3><h4 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a>先决条件</h4><ul><li>一个博客（你必须能够获得源代码）</li><li>一个 GitHub 帐户</li><li>你选择的代码库必须是公开的</li></ul><p>首先，你需要为你的代码库启用讨论功能。</p><p>转到代码库 <code>Settings</code>-&gt; 在 <code>Features</code>部分下 -&gt; 勾选 <code>Discussions</code>框。<br><img src="https://picstorage.212676.xyz/imgs/8b8814e3fa45476fb4d6568951fbdc40.png" alt="img"><br>接下来，在你的代码库中安装giscus应用程序。<br>转到 <a href="https://github.com/apps/giscus">giscus主页</a>，按照提示操作，并仅授予对选定代码库的访问权限。<img src="https://picstorage.212676.xyz/imgs/f15fd586e4cd4f4b82dc7db826d12a48.png" alt="img"><br>现在是重要的部分：我们需要配置giscus小部件。</p><p>首先，进入giscus主页，滚动到 <code>Configuration</code>部分。</p><p>选择您的小部件语言，这是您想要显示小部件的语言。<br><img src="https://picstorage.212676.xyz/imgs/3b9ff0ea2bef46558b9d364bb0642af5.png" alt="img"><br>然后输入你的代码库名称和你的用户名，如用 <code>username/reponame</code>。<img src="https://picstorage.212676.xyz/imgs/4d4469acb1634b51a6b4633ec5454206.png"><br>对于页面↔️讨论映射，我建议选择 “讨论标题包含页面 <code>URL</code>”。但根据你的需要，选择最适合你的那一个。<br><img src="https://picstorage.212676.xyz/imgs/cc13493061bd436b94e79b63e4279b6a.png"><br>接下来，在你的GitHub 代码库上的讨论页面创建一个类别——比如 “Comments（评论）”——或者选择现有的类别。<br><img src="https://picstorage.212676.xyz/imgs/92d114d08dfb4e9b9594b17bb95d9702.png"><br><img src="https://picstorage.212676.xyz/imgs/8797a751ea66497da47e68e1260c4b1a.png">然后根据需要启用可选功能。</p><p>接下来，选择主题。不要担心，你可以通过编程来切换不同的主题。</p><p>最后，复制并粘贴生成的代码。</p><p>Giscus将根据你的设置生成一个脚本标签，你可以将其粘贴到你的代码中。</p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -368,22 +368,22 @@
     
     
     
-    <category term="Icarus" scheme="http://blog.danielniu.me/tags/Icarus/"/>
+    <category term="Icarus" scheme="http://blog.212676.xyz/tags/Icarus/"/>
     
-    <category term="blog" scheme="http://blog.danielniu.me/tags/blog/"/>
+    <category term="blog" scheme="http://blog.212676.xyz/tags/blog/"/>
     
-    <category term="hexo" scheme="http://blog.danielniu.me/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.212676.xyz/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>样式测试</title>
-    <link href="http://blog.danielniu.me/2024/03/07/%E6%A0%B7%E5%BC%8F%E6%B5%8B%E8%AF%95/"/>
-    <id>http://blog.danielniu.me/2024/03/07/%E6%A0%B7%E5%BC%8F%E6%B5%8B%E8%AF%95/</id>
-    <published>2024-03-07T12:39:32.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/03/07/%E6%A0%B7%E5%BC%8F%E6%B5%8B%E8%AF%95/"/>
+    <id>http://blog.212676.xyz/2024/03/07/%E6%A0%B7%E5%BC%8F%E6%B5%8B%E8%AF%95/</id>
+    <published>2024-03-07T20:39:32.000Z</published>
+    <updated>2024-05-06T09:41:22.372Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>这是一个简单的样式测试页面</p></blockquote><span id="more"></span><h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h3><h4 id="主题3"><a href="#主题3" class="headerlink" title="主题3"></a>主题3</h4><h5 id="主题4"><a href="#主题4" class="headerlink" title="主题4"></a>主题4</h5><h6 id="主题5"><a href="#主题5" class="headerlink" title="主题5"></a>主题5</h6><p>细细细细 <strong>粗体粗体粗体粗体粗体</strong> 细细细细细细</p><p><em>斜体斜体</em></p><p><del>删除删除删除删除删除</del></p><p><u>下划线下划线下划线下划线</u></p><blockquote><p>引用引用引用引用</p></blockquote><p>hangneidaima行内代码&#96;</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">代码块代码块代码块</span><br><span class="line"></span><br><span class="line">代码块代码块</span><br><span class="line"></span><br><span class="line">代码块</span><br></pre></td></tr></table></figure><ul><li><p>无序列表</p></li><li><p>无序列表</p></li><li><p>无序列表</p></li><li><p>无序列表、</p><ol><li><p>有序列表</p></li><li><p>有序列表</p></li><li><p>有序列表</p></li><li><p>有序列表</p><p><a href="">链接链接链接链接</a></p><p>@提及提及提及提及提及</p></li></ol></li></ul><div class="justified-gallery"><p><img src="https://picstorage.danielniu.me/imgs/bafybeigqhq6nqzl6muoi7qe4obmknjlkqkhneell6xniiezvujvilhglzm.png"><br><img src="https://picstorage.danielniu.me/imgs/2.png"><br><img src="https://picstorage.danielniu.me/imgs/bafkreifgtz7lwnpkumdxikltrrfhdwjyrxrjnflovh3k2d7ark62i5r43y.png"><br><img src="https://picstorage.danielniu.me/imgs/bafkreidt2dhxhqj4ilximdpergiswfm6lo4nebos6xwdtw5gvkqatvj2ea.png"><br><img src="https://picstorage.danielniu.me/imgs/bafkreiax4bffeap77a4xrwtvlgycfrktw346uxvuc44xcjrf7womhqqboi.png"><br><img src="https://picstorage.danielniu.me/imgs/bafkreia36fe5f3wrka2dctmhyzffrtlu7o4ormvjqmeqeavrn27q27pvr4.png"><br><img src="https://picstorage.danielniu.me/imgs/bafybeie4u27xkjevbhinsomst272dcmanxs27liybijtpesh352heoxkyi.webp"></p></div>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>这是一个简单的样式测试页面</p></blockquote><span id="more"></span><h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h3><h4 id="主题3"><a href="#主题3" class="headerlink" title="主题3"></a>主题3</h4><h5 id="主题4"><a href="#主题4" class="headerlink" title="主题4"></a>主题4</h5><h6 id="主题5"><a href="#主题5" class="headerlink" title="主题5"></a>主题5</h6><p>细细细细 <strong>粗体粗体粗体粗体粗体</strong> 细细细细细细</p><p><em>斜体斜体</em></p><p><del>删除删除删除删除删除</del></p><p><u>下划线下划线下划线下划线</u></p><blockquote><p>引用引用引用引用</p></blockquote><p>hangneidaima行内代码&#96;</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">代码块代码块代码块</span><br><span class="line"></span><br><span class="line">代码块代码块</span><br><span class="line"></span><br><span class="line">代码块</span><br></pre></td></tr></table></figure><ul><li><p>无序列表</p></li><li><p>无序列表</p></li><li><p>无序列表</p></li><li><p>无序列表、</p><ol><li><p>有序列表</p></li><li><p>有序列表</p></li><li><p>有序列表</p></li><li><p>有序列表</p><p><a href="">链接链接链接链接</a></p><p>@提及提及提及提及提及</p></li></ol></li></ul><div class="justified-gallery"><p><img src="https://picstorage.212676.xyz/imgs/bafybeigqhq6nqzl6muoi7qe4obmknjlkqkhneell6xniiezvujvilhglzm.png"><br><img src="https://picstorage.212676.xyz/imgs/2.png"><br><img src="https://picstorage.212676.xyz/imgs/bafkreifgtz7lwnpkumdxikltrrfhdwjyrxrjnflovh3k2d7ark62i5r43y.png"><br><img src="https://picstorage.212676.xyz/imgs/bafkreidt2dhxhqj4ilximdpergiswfm6lo4nebos6xwdtw5gvkqatvj2ea.png"><br><img src="https://picstorage.212676.xyz/imgs/bafkreiax4bffeap77a4xrwtvlgycfrktw346uxvuc44xcjrf7womhqqboi.png"><br><img src="https://picstorage.212676.xyz/imgs/bafkreia36fe5f3wrka2dctmhyzffrtlu7o4ormvjqmeqeavrn27q27pvr4.png"><br><img src="https://picstorage.212676.xyz/imgs/bafybeie4u27xkjevbhinsomst272dcmanxs27liybijtpesh352heoxkyi.webp"></p></div>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -393,16 +393,16 @@
     
     
     
-    <category term="blog" scheme="http://blog.danielniu.me/tags/blog/"/>
+    <category term="blog" scheme="http://blog.212676.xyz/tags/blog/"/>
     
-    <category term="markdown" scheme="http://blog.danielniu.me/tags/markdown/"/>
+    <category term="markdown" scheme="http://blog.212676.xyz/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Windows 万能下载器 Aira2 懒人配置：</title>
-    <link href="http://blog.danielniu.me/2024/03/04/Aira2%20%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE/"/>
-    <id>http://blog.danielniu.me/2024/03/04/Aira2%20%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://blog.212676.xyz/2024/03/04/Aira2%20%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.212676.xyz/2024/03/04/Aira2%20%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE/</id>
     <published>2024-03-04T11:39:12.000Z</published>
     <updated>2024-04-02T05:12:10.000Z</updated>
     
@@ -416,18 +416,18 @@
     
     
     
-    <category term="aira2" scheme="http://blog.danielniu.me/tags/aira2/"/>
+    <category term="aira2" scheme="http://blog.212676.xyz/tags/aira2/"/>
     
   </entry>
   
   <entry>
     <title>c++ STL 库 （未完成）</title>
-    <link href="http://blog.danielniu.me/2024/02/28/c++%20STL%20%E5%BA%93/"/>
-    <id>http://blog.danielniu.me/2024/02/28/c++%20STL%20%E5%BA%93/</id>
-    <published>2024-02-28T11:56:48.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2024/02/28/c++%20STL%20%E5%BA%93/"/>
+    <id>http://blog.212676.xyz/2024/02/28/c++%20STL%20%E5%BA%93/</id>
+    <published>2024-02-28T19:56:48.000Z</published>
+    <updated>2024-05-06T09:41:22.288Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>c++ STL 库包含基本的图，列表，栈等数据结构以及基本操作，方便使用。</p></blockquote><span id="more"></span><h2 id="结构图"><a href="#结构图" class="headerlink" title="结构图"></a>结构图</h2><p><img src="https://picstorage.danielniu.me/imgs/2.png" alt="结构图"></p><h2 id="set（集合）"><a href="#set（集合）" class="headerlink" title="set（集合）"></a>set（集合）</h2><blockquote><p><strong>内部自动有序 不含重复元素</strong> <strong>容器</strong></p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line">set&lt;<span class="type">int</span>&gt; name;</span><br><span class="line">set&lt;<span class="type">double</span>&gt; name;</span><br><span class="line">set&lt;<span class="type">char</span>&gt; name;</span><br><span class="line">set&lt;<span class="keyword">struct</span> node&gt; name;</span><br><span class="line">set&lt;set&lt;<span class="type">int</span>&gt; &gt; name;<span class="comment">//注意：&gt; &gt;之间要加空格</span></span><br><span class="line">set&lt;<span class="type">int</span>&gt; arr[<span class="number">10</span>];</span><br></pre></td></tr></table></figure><h3 id="set容器内元素的访问"><a href="#set容器内元素的访问" class="headerlink" title="set容器内元素的访问"></a>set容器内元素的访问</h3><p><strong>set只能通过迭代器(iterator)访问(除了vector和string之外的STL容器都不支持*(it+i)的访问方式)</strong> ：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set&lt;<span class="type">int</span>&gt;::iterator it;</span><br><span class="line">set&lt;<span class="type">char</span>&gt;::iterator it;</span><br></pre></td></tr></table></figure><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (set&lt;<span class="type">int</span>&gt;::iterator it = st.<span class="built_in">begin</span>(); it != st.<span class="built_in">end</span>(); it++)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; *it &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3><h4 id="insert-value"><a href="#insert-value" class="headerlink" title="insert(value)"></a>insert(value)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">insert</span>(<span class="string">&#x27;C&#x27;</span>);</span><br></pre></td></tr></table></figure><h4 id="find-value"><a href="#find-value" class="headerlink" title="find(value)"></a>find(value)</h4><p><strong>find(value)返回的是set中value所对应的迭代器，也就是value的指针（地址）</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; *(st.<span class="built_in">find</span>(<span class="number">2</span>)) &lt;&lt; endl;</span><br></pre></td></tr></table></figure><h4 id="erase-it"><a href="#erase-it" class="headerlink" title="erase(it)"></a><strong>erase(it)</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">erase</span>(st.<span class="built_in">find</span>(<span class="number">100</span>)); <span class="comment">//利用find()函数找到100,然后用erase删除它</span></span><br></pre></td></tr></table></figure><h4 id="erase-iteratorBegin-iteratorEnd"><a href="#erase-iteratorBegin-iteratorEnd" class="headerlink" title="erase(iteratorBegin , iteratorEnd)"></a><strong>erase(iteratorBegin , iteratorEnd)</strong></h4><p><strong>左闭右开</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">erase</span>(it, st.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure><h4 id="size"><a href="#size" class="headerlink" title="size()"></a>size()</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; st.<span class="built_in">size</span>() &lt;&lt; endl;</span><br></pre></td></tr></table></figure><h2 id="vector（矢量）"><a href="#vector（矢量）" class="headerlink" title="vector（矢量）"></a>vector（矢量）</h2><blockquote><p><strong>变长数组</strong></p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; name;</span><br><span class="line">vector&lt;<span class="type">double</span>&gt; name;</span><br><span class="line">vector&lt;<span class="type">char</span>&gt; name;</span><br><span class="line">vector&lt;<span class="keyword">struct</span> node&gt; name;</span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt; &gt; name;<span class="comment">//注意：&gt; &gt;之间要加空格</span></span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; array[SZIE]; <span class="comment">//二维变长数组</span></span><br></pre></td></tr></table></figure><p><strong>二维数组中，它的一维形式就是地址。例如：</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">3</span>][<span class="number">2</span>];<span class="comment">//定义一个3行2列的地址</span></span><br><span class="line">cout&lt;&lt;arr[<span class="number">0</span>]&lt;&lt;endl; <span class="comment">//输出arr第1行的地址</span></span><br></pre></td></tr></table></figure><p>output:</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0x61fe00</span> <span class="comment">//arr第1行的地址</span></span><br></pre></td></tr></table></figure><h3 id="vector容器内元素的访问"><a href="#vector容器内元素的访问" class="headerlink" title="vector容器内元素的访问"></a>vector容器内元素的访问</h3><p><strong>（1）通过下标访问</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;vi[<span class="number">0</span>]&lt;&lt;endl;</span><br></pre></td></tr></table></figure><p><strong>（2）通过迭代器访问</strong></p><blockquote><p>迭代器（iterator）可以理解为指针</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;类型名&gt;::iterator 变量名;</span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator it;</span><br><span class="line">vector&lt;<span class="type">double</span>&gt;::iterator it;</span><br><span class="line"></span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">       cout&lt;&lt;it[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">       cout&lt;&lt;*(it+i)&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//vector的迭代器不支持it&lt;v.end()的写法，因此循环条件只能it!=v.end()</span></span><br><span class="line">    <span class="keyword">for</span> (vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>(); it!=v.<span class="built_in">end</span>();it++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;*it&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="vector常用函数实例解析"><a href="#vector常用函数实例解析" class="headerlink" title="vector常用函数实例解析"></a>vector常用函数实例解析</h3><h4 id="（1）push-back-item"><a href="#（1）push-back-item" class="headerlink" title="（1）push_back(item)"></a><strong>（1）push_back(item)</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">push_back</span>(i);</span><br></pre></td></tr></table></figure><h4 id="（2）void-pop-back"><a href="#（2）void-pop-back" class="headerlink" title="（2）void pop_back()"></a><strong>（2）void pop_back()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">push_back</span>(i);</span><br></pre></td></tr></table></figure><h4 id="（3）size"><a href="#（3）size" class="headerlink" title="（3）size()"></a><strong>（3）size()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;v.<span class="built_in">size</span>()&lt;&lt;endl;</span><br></pre></td></tr></table></figure><h4 id="（4）clear"><a href="#（4）clear" class="headerlink" title="（4）clear()"></a><strong>（4）clear()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure><h4 id="（5）insert"><a href="#（5）insert" class="headerlink" title="（5）insert()"></a><strong>（5）insert()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">insert</span>(__position,__x);</span><br><span class="line"></span><br><span class="line">v.<span class="built_in">insert</span>(v.<span class="built_in">begin</span>()+<span class="number">2</span>,<span class="number">-1</span>); <span class="comment">//将-1插入v[2]的位置</span></span><br></pre></td></tr></table></figure><h4 id="（6）erase-左闭右开"><a href="#（6）erase-左闭右开" class="headerlink" title="（6）erase()    左闭右开"></a><strong>（6）erase()    左闭右开</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">erase</span>(__position); <span class="comment">//删除一个元素</span></span><br><span class="line">   v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>()+<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">erase</span>(__positionBegin,__positionEnd);<span class="comment">//删除一个区间内的元素</span></span><br><span class="line">    v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>()+<span class="number">1</span>,v.<span class="built_in">begin</span>()+<span class="number">4</span>);</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>c++ STL 库包含基本的图，列表，栈等数据结构以及基本操作，方便使用。</p></blockquote><span id="more"></span><h2 id="结构图"><a href="#结构图" class="headerlink" title="结构图"></a>结构图</h2><p><img src="https://picstorage.212676.xyz/imgs/2.png" alt="结构图"></p><h2 id="set（集合）"><a href="#set（集合）" class="headerlink" title="set（集合）"></a>set（集合）</h2><blockquote><p><strong>内部自动有序 不含重复元素</strong> <strong>容器</strong></p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line">set&lt;<span class="type">int</span>&gt; name;</span><br><span class="line">set&lt;<span class="type">double</span>&gt; name;</span><br><span class="line">set&lt;<span class="type">char</span>&gt; name;</span><br><span class="line">set&lt;<span class="keyword">struct</span> node&gt; name;</span><br><span class="line">set&lt;set&lt;<span class="type">int</span>&gt; &gt; name;<span class="comment">//注意：&gt; &gt;之间要加空格</span></span><br><span class="line">set&lt;<span class="type">int</span>&gt; arr[<span class="number">10</span>];</span><br></pre></td></tr></table></figure><h3 id="set容器内元素的访问"><a href="#set容器内元素的访问" class="headerlink" title="set容器内元素的访问"></a>set容器内元素的访问</h3><p><strong>set只能通过迭代器(iterator)访问(除了vector和string之外的STL容器都不支持*(it+i)的访问方式)</strong> ：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set&lt;<span class="type">int</span>&gt;::iterator it;</span><br><span class="line">set&lt;<span class="type">char</span>&gt;::iterator it;</span><br></pre></td></tr></table></figure><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (set&lt;<span class="type">int</span>&gt;::iterator it = st.<span class="built_in">begin</span>(); it != st.<span class="built_in">end</span>(); it++)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; *it &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3><h4 id="insert-value"><a href="#insert-value" class="headerlink" title="insert(value)"></a>insert(value)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">insert</span>(<span class="string">&#x27;C&#x27;</span>);</span><br></pre></td></tr></table></figure><h4 id="find-value"><a href="#find-value" class="headerlink" title="find(value)"></a>find(value)</h4><p><strong>find(value)返回的是set中value所对应的迭代器，也就是value的指针（地址）</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; *(st.<span class="built_in">find</span>(<span class="number">2</span>)) &lt;&lt; endl;</span><br></pre></td></tr></table></figure><h4 id="erase-it"><a href="#erase-it" class="headerlink" title="erase(it)"></a><strong>erase(it)</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">erase</span>(st.<span class="built_in">find</span>(<span class="number">100</span>)); <span class="comment">//利用find()函数找到100,然后用erase删除它</span></span><br></pre></td></tr></table></figure><h4 id="erase-iteratorBegin-iteratorEnd"><a href="#erase-iteratorBegin-iteratorEnd" class="headerlink" title="erase(iteratorBegin , iteratorEnd)"></a><strong>erase(iteratorBegin , iteratorEnd)</strong></h4><p><strong>左闭右开</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">erase</span>(it, st.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure><h4 id="size"><a href="#size" class="headerlink" title="size()"></a>size()</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; st.<span class="built_in">size</span>() &lt;&lt; endl;</span><br></pre></td></tr></table></figure><h2 id="vector（矢量）"><a href="#vector（矢量）" class="headerlink" title="vector（矢量）"></a>vector（矢量）</h2><blockquote><p><strong>变长数组</strong></p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; name;</span><br><span class="line">vector&lt;<span class="type">double</span>&gt; name;</span><br><span class="line">vector&lt;<span class="type">char</span>&gt; name;</span><br><span class="line">vector&lt;<span class="keyword">struct</span> node&gt; name;</span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt; &gt; name;<span class="comment">//注意：&gt; &gt;之间要加空格</span></span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; array[SZIE]; <span class="comment">//二维变长数组</span></span><br></pre></td></tr></table></figure><p><strong>二维数组中，它的一维形式就是地址。例如：</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">3</span>][<span class="number">2</span>];<span class="comment">//定义一个3行2列的地址</span></span><br><span class="line">cout&lt;&lt;arr[<span class="number">0</span>]&lt;&lt;endl; <span class="comment">//输出arr第1行的地址</span></span><br></pre></td></tr></table></figure><p>output:</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0x61fe00</span> <span class="comment">//arr第1行的地址</span></span><br></pre></td></tr></table></figure><h3 id="vector容器内元素的访问"><a href="#vector容器内元素的访问" class="headerlink" title="vector容器内元素的访问"></a>vector容器内元素的访问</h3><p><strong>（1）通过下标访问</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;vi[<span class="number">0</span>]&lt;&lt;endl;</span><br></pre></td></tr></table></figure><p><strong>（2）通过迭代器访问</strong></p><blockquote><p>迭代器（iterator）可以理解为指针</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;类型名&gt;::iterator 变量名;</span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator it;</span><br><span class="line">vector&lt;<span class="type">double</span>&gt;::iterator it;</span><br><span class="line"></span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">       cout&lt;&lt;it[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">       cout&lt;&lt;*(it+i)&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//vector的迭代器不支持it&lt;v.end()的写法，因此循环条件只能it!=v.end()</span></span><br><span class="line">    <span class="keyword">for</span> (vector&lt;<span class="type">int</span>&gt;::iterator it=v.<span class="built_in">begin</span>(); it!=v.<span class="built_in">end</span>();it++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;*it&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="vector常用函数实例解析"><a href="#vector常用函数实例解析" class="headerlink" title="vector常用函数实例解析"></a>vector常用函数实例解析</h3><h4 id="（1）push-back-item"><a href="#（1）push-back-item" class="headerlink" title="（1）push_back(item)"></a><strong>（1）push_back(item)</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">push_back</span>(i);</span><br></pre></td></tr></table></figure><h4 id="（2）void-pop-back"><a href="#（2）void-pop-back" class="headerlink" title="（2）void pop_back()"></a><strong>（2）void pop_back()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">push_back</span>(i);</span><br></pre></td></tr></table></figure><h4 id="（3）size"><a href="#（3）size" class="headerlink" title="（3）size()"></a><strong>（3）size()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;v.<span class="built_in">size</span>()&lt;&lt;endl;</span><br></pre></td></tr></table></figure><h4 id="（4）clear"><a href="#（4）clear" class="headerlink" title="（4）clear()"></a><strong>（4）clear()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure><h4 id="（5）insert"><a href="#（5）insert" class="headerlink" title="（5）insert()"></a><strong>（5）insert()</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">insert</span>(__position,__x);</span><br><span class="line"></span><br><span class="line">v.<span class="built_in">insert</span>(v.<span class="built_in">begin</span>()+<span class="number">2</span>,<span class="number">-1</span>); <span class="comment">//将-1插入v[2]的位置</span></span><br></pre></td></tr></table></figure><h4 id="（6）erase-左闭右开"><a href="#（6）erase-左闭右开" class="headerlink" title="（6）erase()    左闭右开"></a><strong>（6）erase()    左闭右开</strong></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">erase</span>(__position); <span class="comment">//删除一个元素</span></span><br><span class="line">   v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>()+<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">erase</span>(__positionBegin,__positionEnd);<span class="comment">//删除一个区间内的元素</span></span><br><span class="line">    v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>()+<span class="number">1</span>,v.<span class="built_in">begin</span>()+<span class="number">4</span>);</span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -437,22 +437,22 @@
     
     
     
-    <category term="cpp" scheme="http://blog.danielniu.me/tags/cpp/"/>
+    <category term="cpp" scheme="http://blog.212676.xyz/tags/cpp/"/>
     
-    <category term="stl" scheme="http://blog.danielniu.me/tags/stl/"/>
+    <category term="stl" scheme="http://blog.212676.xyz/tags/stl/"/>
     
-    <category term="algorithm" scheme="http://blog.danielniu.me/tags/algorithm/"/>
+    <category term="algorithm" scheme="http://blog.212676.xyz/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>Verilog running in vscode</title>
-    <link href="http://blog.danielniu.me/2023/10/18/verilog-in-vscode/"/>
-    <id>http://blog.danielniu.me/2023/10/18/verilog-in-vscode/</id>
-    <published>2023-10-18T12:34:39.000Z</published>
-    <updated>2024-04-02T05:12:10.000Z</updated>
+    <link href="http://blog.212676.xyz/2023/10/18/verilog-in-vscode/"/>
+    <id>http://blog.212676.xyz/2023/10/18/verilog-in-vscode/</id>
+    <published>2023-10-18T20:34:39.000Z</published>
+    <updated>2024-05-06T09:41:22.428Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>尝试在vscode跑Verilog，记录一下。<br>很久之前设置的，想到多少写多少吧：</p></blockquote><span id="more"></span><h2 id="一·添加的扩展："><a href="#一·添加的扩展：" class="headerlink" title="一·添加的扩展："></a>一·添加的扩展：</h2><p><img src="https://picstorage.danielniu.me/imgs/bafkreifgtz7lwnpkumdxikltrrfhdwjyrxrjnflovh3k2d7ark62i5r43y.png" alt="image"><br>Verilog HDL：添加一个运行按钮，添加控制台输出（大概）</p><p>Verilog Snippet：关键词高亮补全（大概）</p><p>Verilog_Testbench：自动生成测试文件，用处不大。</p><p>Verilog-HDL&#x2F;SystemVe：主要的，综合各个模块</p><p><img src="https://picstorage.danielniu.me/imgs/bafkreidt2dhxhqj4ilximdpergiswfm6lo4nebos6xwdtw5gvkqatvj2ea.png" alt="image"></p><p>WaveTrace：波形显示</p><h2 id="二·部分设置："><a href="#二·部分设置：" class="headerlink" title="二·部分设置："></a>二·部分设置：</h2><p><code>&quot;verilog.linting.linter&quot;: &quot;iverilog&quot;</code></p><p><img src="https://picstorage.danielniu.me/imgs/bafkreiax4bffeap77a4xrwtvlgycfrktw346uxvuc44xcjrf7womhqqboi.png" alt="image"></p><h2 id="三·报错："><a href="#三·报错：" class="headerlink" title="三·报错："></a>三·报错：</h2><p>1.include 报错：<br>`include “.&#x2F;my.v”找不到文件，使用相对绝对路径都不行：设置为：<br><code>&quot;verilog.linting.iverilog.runAtFileLocation&quot;: true</code><br><img src="https://picstorage.danielniu.me/imgs/bafkreia36fe5f3wrka2dctmhyzffrtlu7o4ormvjqmeqeavrn27q27pvr4.png" alt="1"></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>尝试在vscode跑Verilog，记录一下。<br>很久之前设置的，想到多少写多少吧：</p></blockquote><span id="more"></span><h2 id="一·添加的扩展："><a href="#一·添加的扩展：" class="headerlink" title="一·添加的扩展："></a>一·添加的扩展：</h2><p><img src="https://picstorage.212676.xyz/imgs/bafkreifgtz7lwnpkumdxikltrrfhdwjyrxrjnflovh3k2d7ark62i5r43y.png" alt="image"><br>Verilog HDL：添加一个运行按钮，添加控制台输出（大概）</p><p>Verilog Snippet：关键词高亮补全（大概）</p><p>Verilog_Testbench：自动生成测试文件，用处不大。</p><p>Verilog-HDL&#x2F;SystemVe：主要的，综合各个模块</p><p><img src="https://picstorage.212676.xyz/imgs/bafkreidt2dhxhqj4ilximdpergiswfm6lo4nebos6xwdtw5gvkqatvj2ea.png" alt="image"></p><p>WaveTrace：波形显示</p><h2 id="二·部分设置："><a href="#二·部分设置：" class="headerlink" title="二·部分设置："></a>二·部分设置：</h2><p><code>&quot;verilog.linting.linter&quot;: &quot;iverilog&quot;</code></p><p><img src="https://picstorage.212676.xyz/imgs/bafkreiax4bffeap77a4xrwtvlgycfrktw346uxvuc44xcjrf7womhqqboi.png" alt="image"></p><h2 id="三·报错："><a href="#三·报错：" class="headerlink" title="三·报错："></a>三·报错：</h2><p>1.include 报错：<br>`include “.&#x2F;my.v”找不到文件，使用相对绝对路径都不行：设置为：<br><code>&quot;verilog.linting.iverilog.runAtFileLocation&quot;: true</code><br><img src="https://picstorage.212676.xyz/imgs/bafkreia36fe5f3wrka2dctmhyzffrtlu7o4ormvjqmeqeavrn27q27pvr4.png" alt="1"></p>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -462,11 +462,11 @@
     
     
     
-    <category term="环境配置" scheme="http://blog.danielniu.me/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="http://blog.212676.xyz/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="verilog" scheme="http://blog.danielniu.me/tags/verilog/"/>
+    <category term="verilog" scheme="http://blog.212676.xyz/tags/verilog/"/>
     
-    <category term="vscode" scheme="http://blog.danielniu.me/tags/vscode/"/>
+    <category term="vscode" scheme="http://blog.212676.xyz/tags/vscode/"/>
     
   </entry>
   
