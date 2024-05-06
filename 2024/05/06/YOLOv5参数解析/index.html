@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>YOLOv5参数解析 - HK&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content=" hsl(30, 100%, 50%)"><meta name="application-name" content="Daniel Niu"><meta name="msapplication-TileImage" content="img/icon1.svg"><meta name="msapplication-TileColor" content=" hsl(30, 100%, 50%)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Daniel Niu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="72x72" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="96x96" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="128x128" href="img/icon1.svg"><link rel="apple-touch-icon" sizes="256x256" href="img/icon1.svg"><meta name="description" content="YOLOv5参数解析，主要解析源码中train.py文件中包含的参数。"><meta property="og:type" content="article"><meta property="og:title" content="YOLOv5参数解析"><meta property="og:url" content="http://blog.212676.xyz/2024/05/06/YOLOv5%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/"><meta property="og:site_name" content="HK&#039;s Blog"><meta property="og:description" content="YOLOv5参数解析，主要解析源码中train.py文件中包含的参数。"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/a28ac1c5a070cc4a711476ab8604c1fac79ce5ad.png@1256w_840h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/a28ac1c5a070cc4a711476ab8604c1fac79ce5ad.png@1256w_840h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/8ab19b579289b4ef2be47a4b754c7542d6a56d6f.png@1256w_888h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/8ab19b579289b4ef2be47a4b754c7542d6a56d6f.png@1256w_888h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/9669c6cee20c3a3ddf3018e79ccfa009fa44c928.png@!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/202168d068ab52207fa4cb33b834c29a31bce928.png@1256w_1878h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/5e544132a647d98c52eccca39db96d13a1a00ae8.png@1256w_32h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/b912a521dabd2bbf45c4b60d6b115125d8e2c393.png@1256w_670h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/96a063d4c242f88459ce18aad8a7ada2b901e669.png@!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/ab2bbcc382377e43409be34f0e08f92a2827e8ee.png@1256w_1280h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/48d83a35d0ebacf534b9549f4d7d033a2c81c8b4.png@!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/abcfa937b4e92b5a2c40a7c67d41034037cb2af0.png@1256w_52h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/3d736bdfe26aeb93a60683d81a208b03cf4df629.png@1256w_32h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/1eba37d89afc4a4113114af275e8cc4dcd201a10.png@1256w_32h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/b82c70b99ea26741d4bea436500455c98b6f61c3.png@1256w_42h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/f163e4f84c93d87d7b2ad44562de764217ef9307.png@1256w_516h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/b8c79a47d5a8d6c6dc77007ba48a5c6b0f6962e7.png@1256w_516h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/76ec982f4665f4a5ba680df0431ec76458dc2d81.png@1256w_34h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/566d564ff82d9e7fa1d81c5341348e77b03cca16.png@1256w_268h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/48d2d3f67da669933873fce602da5bc5e7051550.png@1256w_40h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/4d7576ee571ffedbe9e0c0a2401553934416ead8.png@!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/f7c22e18f3e2ff0d65788abebb3ad68b125160e8.png@1256w_42h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/e9ba551ef2624a8f13f8b4ddea81d7d737f68c65.png@1256w_42h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/1b1366f5f481ef3213e3123566f1686937e4a13f.png@1256w_356h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/87bea322ea07a8733c5cd9d233e447eb02165b1c.png@1256w_34h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/2bb316764be4204703141df3589fa800c54b00f4.png@!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/870b3b3b70de6c35d48aff3d4328dc9c04437960.png@1256w_46h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/65ff5f71ec908efa15ac2d2e6f5f5f32528af9f7.png@1256w_34h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/4f64e69115fc7f68c4eb0b280719319a1aae198d.png@1256w_28h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/54a79f5415bd021ffc8bb063f9076ad8ec7d4e94.png@1256w_44h_!web-article-pic.avif"><meta property="og:image" content="https://i0.hdslb.com/bfs/article/4caf095a8d8098c08b021311ce749610deabcf67.png@1256w_40h_!web-article-pic.avif"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="og:image" content="http://blog.212676.xyz/"><meta property="article:published_time" content="2024-05-06T14:40:08.000Z"><meta property="article:modified_time" content="2024-05-06T14:40:45.184Z"><meta property="article:author" content="Daniel Niu"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://i0.hdslb.com/bfs/article/a28ac1c5a070cc4a711476ab8604c1fac79ce5ad.png@1256w_840h_!web-article-pic.avif"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.212676.xyz/2024/05/06/YOLOv5%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/"},"headline":"YOLOv5参数解析","image":[],"datePublished":"2024-05-06T14:40:08.000Z","dateModified":"2024-05-06T14:40:45.184Z","author":{"@type":"Person","name":"Daniel Niu"},"publisher":{"@type":"Organization","name":"HK's Blog","logo":{"@type":"ImageObject","url":"http://blog.212676.xyz/2024/05/06/YOLOv5%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/img/icon1.svg"}},"description":"YOLOv5参数解析，主要解析源码中train.py文件中包含的参数。"}</script><link rel="canonical" href="http://blog.212676.xyz/2024/05/06/YOLOv5%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="HK's Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/AboutMe">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-05-06T14:40:08.000Z" title="5/6/2024, 2:40:08 PM">2024-05-06</time></span></div></div><h1 class="title is-3 is-size-4-mobile">YOLOv5参数解析</h1><div class="content"><blockquote>
+<p>YOLOv5参数解析，主要解析源码中train.py文件中包含的参数。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="5000字多图长文预警！手把手带你调参Yolo-v5（二）"><a href="#5000字多图长文预警！手把手带你调参Yolo-v5（二）" class="headerlink" title="5000字多图长文预警！手把手带你调参Yolo v5（二）"></a>5000字多图长文预警！手把手带你调参Yolo v5（二）</h1><ul>
+<li>1.1’–weights’</li>
+<li>1.2’–cfg’</li>
+<li>1.3’–data’</li>
+<li>1.4’–hyp’</li>
+<li>1.5’–epochs’</li>
+<li>1.6’–batch-size’</li>
+<li>1.7’–imgsz’, ‘–img’, ‘–img-size’</li>
+<li>1.8’–rect’🍀</li>
+<li>1.9’–resume’🍀</li>
+<li>1.10’–nosave’</li>
+<li>1.11’–noval’</li>
+<li>1.12’–noautoanchor’🍀</li>
+<li>1.13’–evolve’🍀</li>
+<li>1.14’–bucket’</li>
+<li>1.15’–cache’</li>
+<li>1.16’–image-weights’</li>
+<li>1.17’–device’</li>
+<li>1.18’–multi-scale’🍀</li>
+<li>1.19’–single-cls’</li>
+<li>1.20’–optimizer’</li>
+<li>1.21’–sync-bn’</li>
+<li>1.22’–workers’</li>
+<li>1.23’–project’</li>
+<li>1.24’–name’</li>
+<li>1.25’–exist-ok’</li>
+<li>1.26’–quad’</li>
+<li>1.27’–cos-lr’🍀</li>
+<li>1.28’–label-smoothing’🍀</li>
+<li>1.29’–patience’</li>
+<li>1.30’–freeze’🍀</li>
+<li>1.31’–save-period’</li>
+<li>1.32’–local_rank’</li>
+<li>1.33’–entity’</li>
+<li>1.34’–upload_dataset’</li>
+<li>1.35’–bbox_interval’</li>
+<li>1.36’–artifact_alias’</li>
+</ul>
+<h1 id="0-首次运行常见错误🍀"><a href="#0-首次运行常见错误🍀" class="headerlink" title="0.首次运行常见错误🍀"></a>0.首次运行常见错误🍀</h1><p>刚拿到代码可以运行train.py文件看看，一般都会出现这个错误：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That <span class="keyword">is</span> dangerous, since it can degrade performance <span class="keyword">or</span> cause incorrect results. The best thing to do <span class="keyword">is</span> to ensure that only a single OpenMP runtime <span class="keyword">is</span> linked into the process, e.g. by avoiding static linking of the OpenMP runtime <span class="keyword">in</span> <span class="built_in">any</span> library. As an unsafe, unsupported, undocumented workaround you can <span class="built_in">set</span> the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to <span class="keyword">continue</span> to execute, but that may cause crashes <span class="keyword">or</span> silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.</span><br></pre></td></tr></table></figure>
+
+<p>解决方案：在train.py文件里加入以下代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">os.environ[<span class="string">&#x27;KMP_DUPLICATE_LIB_OK&#x27;</span>]=<span class="string">&#x27;TRUE&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="1-train-py参数解析🚀"><a href="#1-train-py参数解析🚀" class="headerlink" title="1.train.py参数解析🚀"></a>1.train.py参数解析🚀</h1><p>首先还是打开根目录下的 <code>train.py</code>，直接看 <code>parse_opt()</code></p>
+<p><img src="https://i0.hdslb.com/bfs/article/a28ac1c5a070cc4a711476ab8604c1fac79ce5ad.png@1256w_840h_!web-article-pic.avif"></p>
+<h1 id="1-1’–weights’"><a href="#1-1’–weights’" class="headerlink" title="1.1’–weights’"></a>1.1’–weights’</h1><p><img src="https://i0.hdslb.com/bfs/article/a28ac1c5a070cc4a711476ab8604c1fac79ce5ad.png@1256w_840h_!web-article-pic.avif"></p>
+<p>指定预训练权重路径；如果这里设置为空的话，就是自己从头开始进行训练；下图是官方提供的预训练权重</p>
+<p><img src="https://i0.hdslb.com/bfs/article/8ab19b579289b4ef2be47a4b754c7542d6a56d6f.png@1256w_888h_!web-article-pic.avif"></p>
+<h1 id="1-2’–cfg’"><a href="#1-2’–cfg’" class="headerlink" title="1.2’–cfg’"></a>1.2’–cfg’</h1><p><img src="https://i0.hdslb.com/bfs/article/8ab19b579289b4ef2be47a4b754c7542d6a56d6f.png@1256w_888h_!web-article-pic.avif"></p>
+<p>指定模型配置文件路径的；源码里面提供了这5个配置文件，配置文件里面指定了一些参数信息和backbone的结构信息。</p>
+<p><img src="https://i0.hdslb.com/bfs/article/9669c6cee20c3a3ddf3018e79ccfa009fa44c928.png@!web-article-pic.avif"></p>
+<p><img src="https://i0.hdslb.com/bfs/article/202168d068ab52207fa4cb33b834c29a31bce928.png@1256w_1878h_!web-article-pic.avif"></p>
+<h1 id="1-3’–data’"><a href="#1-3’–data’" class="headerlink" title="1.3’–data’"></a>1.3’–data’</h1><p><img src="https://i0.hdslb.com/bfs/article/5e544132a647d98c52eccca39db96d13a1a00ae8.png@1256w_32h_!web-article-pic.avif"></p>
+<p>数据集对应的参数文件；里面主要存放数据集的类别和路径信息。</p>
+<p><img src="https://i0.hdslb.com/bfs/article/b912a521dabd2bbf45c4b60d6b115125d8e2c393.png@1256w_670h_!web-article-pic.avif"></p>
+<p>yolo源码里面提供了9种数据集的配置文件</p>
+<p><img src="https://i0.hdslb.com/bfs/article/96a063d4c242f88459ce18aad8a7ada2b901e669.png@!web-article-pic.avif"></p>
+<h1 id="1-4’–hyp’"><a href="#1-4’–hyp’" class="headerlink" title="1.4’–hyp’"></a>1.4’–hyp’</h1><p>指定超参数文件的路径；超参数里面包含了大量的参数信息，同样提供了5个</p>
+<p><img src="https://i0.hdslb.com/bfs/article/ab2bbcc382377e43409be34f0e08f92a2827e8ee.png@1256w_1280h_!web-article-pic.avif"></p>
+<p><img src="https://i0.hdslb.com/bfs/article/48d83a35d0ebacf534b9549f4d7d033a2c81c8b4.png@!web-article-pic.avif"></p>
+<h1 id="1-5’–epochs’"><a href="#1-5’–epochs’" class="headerlink" title="1.5’–epochs’"></a>1.5’–epochs’</h1><p><img src="https://i0.hdslb.com/bfs/article/abcfa937b4e92b5a2c40a7c67d41034037cb2af0.png@1256w_52h_!web-article-pic.avif"></p>
+<p>训练的轮数；默认为300轮，显示效果是0-299</p>
+<h1 id="1-6’–batch-size’"><a href="#1-6’–batch-size’" class="headerlink" title="1.6’–batch-size’"></a>1.6’–batch-size’</h1><p><img src="https://i0.hdslb.com/bfs/article/3d736bdfe26aeb93a60683d81a208b03cf4df629.png@1256w_32h_!web-article-pic.avif"></p>
+<p>每批次的输入数据量；<code>default=-1</code>将时自动调节 <code>batchsize</code>大小。</p>
+<p>❝ 这里说一下epoch、batchsize、iteration三者之间的联系</p>
+<blockquote>
+<p>1、batchsize是批次大小，假如取batchsize&#x3D;24，则表示每次训练时在训练集中取24个训练样本进行训练。</p>
+<p>2、iteration是迭代次数，1个iteration就等于一次使用24（batchsize大小）个样本进行训练。</p>
+<p>3、epoch：1个epoch就等于使用训练集中全部样本训练1次。</p>
+</blockquote>
+<h1 id="1-7’–imgsz’-‘–img’-‘–img-size’"><a href="#1-7’–imgsz’-‘–img’-‘–img-size’" class="headerlink" title="1.7’–imgsz’, ‘–img’, ‘–img-size’"></a>1.7’–imgsz’, ‘–img’, ‘–img-size’</h1><p><img src="https://i0.hdslb.com/bfs/article/1eba37d89afc4a4113114af275e8cc4dcd201a10.png@1256w_32h_!web-article-pic.avif"></p>
+<p>训练集和测试集图片的像素大小；输入默认640*640，这个参数在你选择yolov5l那些大一点的权重的时候，要进行适当的调整，这样才能达到好的效果。</p>
+<h1 id="1-8’–rect’🍀"><a href="#1-8’–rect’🍀" class="headerlink" title="1.8’–rect’🍀"></a>1.8’–rect’🍀</h1><p><img src="https://i0.hdslb.com/bfs/article/b82c70b99ea26741d4bea436500455c98b6f61c3.png@1256w_42h_!web-article-pic.avif"></p>
+<p>是否采用矩阵推理的方式去训练模型；</p>
+<p>❝ 所谓矩阵推理就是不再要求你训练的图片是正方形了；矩阵推理会加速模型的推理过程，减少一些冗余信息。</p>
+<p>下图分别是方形推理方式和矩阵推理方式</p>
+<p><img src="https://i0.hdslb.com/bfs/article/f163e4f84c93d87d7b2ad44562de764217ef9307.png@1256w_516h_!web-article-pic.avif"></p>
+<p><img src="https://i0.hdslb.com/bfs/article/b8c79a47d5a8d6c6dc77007ba48a5c6b0f6962e7.png@1256w_516h_!web-article-pic.avif"></p>
+<h1 id="1-9’–resume’🍀"><a href="#1-9’–resume’🍀" class="headerlink" title="1.9’–resume’🍀"></a>1.9’–resume’🍀</h1><p><img src="https://i0.hdslb.com/bfs/article/76ec982f4665f4a5ba680df0431ec76458dc2d81.png@1256w_34h_!web-article-pic.avif"></p>
+<p>断点续训：即是否在之前训练的一个模型基础上继续训练，default 值默认是 false；如果想采用断点续训的方式，这里我推荐一种写法，即首先将default&#x3D;False 改为 default&#x3D;True 随后在终端中键入如下指令</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python train.py --resume D:\Pycharm_Projects\yolov5-<span class="number">6.1</span>-<span class="number">4_23</span>\runs\train\exp19\weights\last.pt</span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;D:\Pycharm_Projects\yolov5-6.1-4_23\runs\train\exp19\weights\last.pt&#x3D;&#x3D;为你上一次中断时保存的pt文件路径</p>
+<p>输入指令后就可以看到模型是继续从上次结束时开始训练的</p>
+<p><img src="https://i0.hdslb.com/bfs/article/566d564ff82d9e7fa1d81c5341348e77b03cca16.png@1256w_268h_!web-article-pic.avif"></p>
+<h1 id="1-10’–nosave’"><a href="#1-10’–nosave’" class="headerlink" title="1.10’–nosave’"></a>1.10’–nosave’</h1><p><img src="https://i0.hdslb.com/bfs/article/48d2d3f67da669933873fce602da5bc5e7051550.png@1256w_40h_!web-article-pic.avif"></p>
+<p>是否只保存最后一轮的pt文件；我们默认是保存best.pt和last.pt两个的</p>
+<p><img src="https://i0.hdslb.com/bfs/article/4d7576ee571ffedbe9e0c0a2401553934416ead8.png@!web-article-pic.avif"></p>
+<h1 id="1-11’–noval’"><a href="#1-11’–noval’" class="headerlink" title="1.11’–noval’"></a>1.11’–noval’</h1><p><img src="https://i0.hdslb.com/bfs/article/f7c22e18f3e2ff0d65788abebb3ad68b125160e8.png@1256w_42h_!web-article-pic.avif"></p>
+<p>只在最后一轮测试；正常情况下每个epoch都会计算mAP，但如果开启了这个参数，那么就只在最后一轮上进行测试，不建议开启</p>
+<h1 id="1-12’–noautoanchor’🍀"><a href="#1-12’–noautoanchor’🍀" class="headerlink" title="1.12’–noautoanchor’🍀"></a>1.12’–noautoanchor’🍀</h1><p><img src="https://i0.hdslb.com/bfs/article/e9ba551ef2624a8f13f8b4ddea81d7d737f68c65.png@1256w_42h_!web-article-pic.avif"></p>
+<p>是否禁用自动锚框；默认是开启的，自动锚点的好处是可以简化训练过程；</p>
+<blockquote>
+<p>yolov5中预先设定了一下锚定框，这些锚框是针对coco数据集的，其他目标检测也适用，可以在models&#x2F;yolov5.文件中查看，例如如图所示，这些框针对的图片大小是640640。这是默认的anchor大小。需要注意的是在目标检测任务中，一般使用大特征图上去检测小目标，因为大特征图含有更多小目标信息，因此大特征图上的anchor数值通常设置为小数值，小特征图检测大目标，因此小特征图上anchor数值设置较大。</p>
+</blockquote>
+<p><img src="https://i0.hdslb.com/bfs/article/1b1366f5f481ef3213e3123566f1686937e4a13f.png@1256w_356h_!web-article-pic.avif"></p>
+<blockquote>
+<p>在yolov5 中自动锚定框选项，训练开始前，会自动计算数据集标注信息针对默认锚定框的最佳召回率，当最佳召回率大于等于0.98时，则不需要更新锚定框；如果最佳召回率小于0.98，则需要重新计算符合此数据集的锚定框。在parse_opt设置了默认自动计算锚框选项，如果不想自动计算，可以设置这个，建议不要改动。</p>
+</blockquote>
+<h1 id="1-13’–evolve’🍀"><a href="#1-13’–evolve’🍀" class="headerlink" title="1.13’–evolve’🍀"></a>1.13’–evolve’🍀</h1><p><img src="https://i0.hdslb.com/bfs/article/87bea322ea07a8733c5cd9d233e447eb02165b1c.png@1256w_34h_!web-article-pic.avif"></p>
+<p>遗传超参数进化；yolov5使用遗传超参数进化，提供的默认参数是通过在COCO数据集上使用超参数进化得来的（也就是下图这些参数）。由于超参数进化会耗费大量的资源和时间，所以建议大家不要动这个参数。</p>
+<blockquote>
+<p>遗传算法是利用种群搜索技术将种群作为一组问题解，通过对当前种群施加类似生物遗传环境因素的选择、交叉、变异等一系列的遗传操作来产生新一代的种群，并逐步使种群优化到包含近似最优解的状态，遗传算法调优能够求出优化问题的全局最优解，优化结果与初始条件无关，算法独立于求解域，具有较强的鲁棒性，适合于求解复杂的优化问题，应用较为广泛。</p>
+</blockquote>
+<p><img src="https://i0.hdslb.com/bfs/article/2bb316764be4204703141df3589fa800c54b00f4.png@!web-article-pic.avif"></p>
+<h1 id="1-14’–bucket’"><a href="#1-14’–bucket’" class="headerlink" title="1.14’–bucket’"></a>1.14’–bucket’</h1><p><img src="https://i0.hdslb.com/bfs/article/870b3b3b70de6c35d48aff3d4328dc9c04437960.png@1256w_46h_!web-article-pic.avif"></p>
+<p>谷歌云盘；通过这个参数可以下载谷歌云盘上的一些东西，但是现在没必要使用了</p>
+<h1 id="1-15’–cache’"><a href="#1-15’–cache’" class="headerlink" title="1.15’–cache’"></a>1.15’–cache’</h1><p><img src="https://i0.hdslb.com/bfs/article/65ff5f71ec908efa15ac2d2e6f5f5f32528af9f7.png@1256w_34h_!web-article-pic.avif"></p>
+<p>是否提前缓存图片到内存，以加快训练速度，默认False；开启这个参数就会对图片进行缓存，从而更好的训练模型。</p>
+<h1 id="1-16’–image-weights’"><a href="#1-16’–image-weights’" class="headerlink" title="1.16’–image-weights’"></a>1.16’–image-weights’</h1><p><img src="https://i0.hdslb.com/bfs/article/4f64e69115fc7f68c4eb0b280719319a1aae198d.png@1256w_28h_!web-article-pic.avif"></p>
+<p>是否启用加权图像策略，默认是不开启的；主要是为了解决样本不平衡问题；开启后会对于上一轮训练效果不好的图片，在下一轮中增加一些权重；</p>
+<h1 id="1-17’–device’"><a href="#1-17’–device’" class="headerlink" title="1.17’–device’"></a>1.17’–device’</h1><p><img src="https://i0.hdslb.com/bfs/article/54a79f5415bd021ffc8bb063f9076ad8ec7d4e94.png@1256w_44h_!web-article-pic.avif"></p>
+<p>设备选择；这个参数就是指定硬件设备的，系统会自己判断的</p>
+<h1 id="1-18’–multi-scale’🍀"><a href="#1-18’–multi-scale’🍀" class="headerlink" title="1.18’–multi-scale’🍀"></a>1.18’–multi-scale’🍀</h1><p><img src="https://i0.hdslb.com/bfs/article/4caf095a8d8098c08b021311ce749610deabcf67.png@1256w_40h_!web-article-pic.avif"></p>
+<p>是否启用多尺度训练，默认是不开启的；多尺度训练是指设置几种不同的图片输入尺度，训练时每隔一定iterations随机选取一种尺度训练，这样训练出来的模型鲁棒性更强。</p>
+<blockquote>
+<p>多尺度训练在比赛中经常可以看到他身影，是被证明了有效提高性能的方式。输入图片的尺寸对检测模型的性能影响很大，在基础网络部分常常会生成比原图小数十倍的特征图，导致小物体的特征描述不容易被检测网络捕捉。通过输入更大、更多尺寸的图片进行训练，能够在一定程度上提高检测模型对物体大小的鲁棒性。</p>
+</blockquote>
+<h1 id="1-19’–single-cls’"><a href="#1-19’–single-cls’" class="headerlink" title="1.19’–single-cls’"></a>1.19’–single-cls’</h1><p><img src="/"></p>
+<p>设定训练数据集是单类别还是多类别；默认为 false多类别</p>
+<h1 id="1-20’–optimizer’"><a href="#1-20’–optimizer’" class="headerlink" title="1.20’–optimizer’"></a>1.20’–optimizer’</h1><p><img src="/"></p>
+<p>选择优化器；默认为SGD，可选SGD，Adam，AdamW</p>
+<h1 id="1-21’–sync-bn’"><a href="#1-21’–sync-bn’" class="headerlink" title="1.21’–sync-bn’"></a>1.21’–sync-bn’</h1><p><img src="/"></p>
+<p>是否开启跨卡同步BN；开启参数后即可使用 SyncBatchNorm多 GPU 进行分布式训练</p>
+<h1 id="1-22’–workers’"><a href="#1-22’–workers’" class="headerlink" title="1.22’–workers’"></a>1.22’–workers’</h1><p><img src="/"></p>
+<p>最大worker数量；这里经常出问题，建议设置成0</p>
+<h1 id="1-23’–project’"><a href="#1-23’–project’" class="headerlink" title="1.23’–project’"></a>1.23’–project’</h1><p><img src="/"></p>
+<p>指定训练好的模型的保存路径；默认在runs&#x2F;train</p>
+<p><img src="/"></p>
+<h1 id="1-24’–name’"><a href="#1-24’–name’" class="headerlink" title="1.24’–name’"></a>1.24’–name’</h1><p><img src="/"></p>
+<p>设定保存的模型文件夹名，默认在exp；</p>
+<h1 id="1-25’–exist-ok’"><a href="#1-25’–exist-ok’" class="headerlink" title="1.25’–exist-ok’"></a>1.25’–exist-ok’</h1><p><img src="/"></p>
+<p>每次预测模型的结果是否保存在原来的文件夹；如果指定了这个参数的话，那么本次预测的结果还是保存在上一次保存的文件夹里；如果不指定就是每次预测结果保存一个新的文件夹下。</p>
+<h1 id="1-26’–quad’"><a href="#1-26’–quad’" class="headerlink" title="1.26’–quad’"></a>1.26’–quad’</h1><p><img src="/"></p>
+<p>官方给出的开启这个功能后的实际效果：</p>
+<ul>
+<li>好处是在比默认 640 大的数据集上训练效果更好</li>
+<li>副作用是在 640 大小的数据集上训练效果可能会差一些</li>
+</ul>
+<h1 id="1-27’–cos-lr’🍀"><a href="#1-27’–cos-lr’🍀" class="headerlink" title="1.27’–cos-lr’🍀"></a>1.27’–cos-lr’🍀</h1><p><img src="/"></p>
+<p>是否开启余弦学习率；</p>
+<p><img src="/"></p>
+<p>这是我不采用cos-lr时学习率的曲线：</p>
+<p><img src="/"></p>
+<p>开启后的学习率应该是这样子：</p>
+<p><img src="/"></p>
+<h1 id="1-28’–label-smoothing’🍀"><a href="#1-28’–label-smoothing’🍀" class="headerlink" title="1.28’–label-smoothing’🍀"></a>1.28’–label-smoothing’🍀</h1><p><img src="/"></p>
+<p>是否对标签进行平滑处理，默认是不启用的；</p>
+<blockquote>
+<p>在训练样本中，我们并不能保证所有sample都标注正确，如果某个样本标注错误，就可能产生负面印象，如果我们有办法“告诉”模型，样本的标签不一定正确，那么训练出来的模型对于少量的样本错误就会有“免疫力”采用随机化的标签作为训练数据时，损失函数有1-ε的概率与上面的式子相同，比如说告诉模型只有0.95概率是那个标签。</p>
+</blockquote>
+<h1 id="1-29’–patience’"><a href="#1-29’–patience’" class="headerlink" title="1.29’–patience’"></a>1.29’–patience’</h1><p><img src="/"></p>
+<p>早停；如果模型在default值轮数里没有提升，则停止训练模型</p>
+<h1 id="1-30’–freeze’🍀"><a href="#1-30’–freeze’🍀" class="headerlink" title="1.30’–freeze’🍀"></a>1.30’–freeze’🍀</h1><p><img src="/"></p>
+<p>指定冻结层数量；可以在yolov5s.yaml中查看主干网络层数。</p>
+<blockquote>
+<p>冻结训练是迁移学习常用的方法，当我们在使用数据量不足的情况下，通常我们会选择公共数据集提供权重作为预训练权重，我们知道网络的backbone主要是用来提取特征用的，一般大型数据集训练好的权重主干特征提取能力是比较强的，这个时候我们只需要冻结主干网络，fine-tune后面层就可以了，不需要从头开始训练，大大减少了实践而且还提高了性能。</p>
+</blockquote>
+<p><img src="/"></p>
+<p>例如如下指令，代表冻结前8层，因为只有9层，注意不要超过9</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python train.py --freeze <span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+<p>这里分享一个对比冻结效果的项目</p>
+<p>这里是项目的部分截图</p>
+<p><img src="/"></p>
+<h1 id="1-31’–save-period’"><a href="#1-31’–save-period’" class="headerlink" title="1.31’–save-period’"></a>1.31’–save-period’</h1><p><img src="/"></p>
+<p>用于设置多少个epoch保存一下checkpoint；</p>
+<h1 id="1-32’–local-rank’"><a href="#1-32’–local-rank’" class="headerlink" title="1.32’–local_rank’"></a>1.32’–local_rank’</h1><p><img src="/"></p>
+<p>DistributedDataParallel 单机多卡训练，单GPU设备不需要设置；</p>
+<h1 id="1-33’–entity’"><a href="#1-33’–entity’" class="headerlink" title="1.33’–entity’"></a>1.33’–entity’</h1><p><img src="/"></p>
+<p>在线可视化工具，类似于tensorboard</p>
+<h1 id="1-34’–upload-dataset’"><a href="#1-34’–upload-dataset’" class="headerlink" title="1.34’–upload_dataset’"></a>1.34’–upload_dataset’</h1><p><img src="/"></p>
+<p>是否上传dataset到wandb tabel(将数据集作为交互式 dsviz表 在浏览器中查看、查询、筛选和分析数据集) 默认False</p>
+<h1 id="1-35’–bbox-interval’"><a href="#1-35’–bbox-interval’" class="headerlink" title="1.35’–bbox_interval’"></a>1.35’–bbox_interval’</h1><p><img src="/"></p>
+<p>设置界框图像记录间隔 Set bounding-box image logging interval for W&amp;B 默认-1</p>
+<h1 id="1-36’–artifact-alias’"><a href="#1-36’–artifact-alias’" class="headerlink" title="1.36’–artifact_alias’"></a>1.36’–artifact_alias’</h1><p><img src="/"></p>
+<p>功能作者还未实现</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>YOLOv5参数解析</p><p><a href="http://blog.212676.xyz/2024/05/06/YOLOv5参数解析/">http://blog.212676.xyz/2024/05/06/YOLOv5参数解析/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Daniel Niu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2024-05-06</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-05-06</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/04/13/ununtu-shell-tools/"><span class="level-item">ununtu_shell_tools</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "4df529a5934168fbf984d21b9cdd1ad2",
+            repo: "NiuHK.github.io",
+            owner: "NiuHK",
+            clientID: "033643d93760c7549ef5",
+            clientSecret: "b082f7d7117bbd41d66e0176376cd9b09bb36adb",
+            admin: ["NiuHK"],
+            createIssueManually: false,
+            distractionFreeMode: true,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/head.png" alt="Daniel Niu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Daniel Niu</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1" style="color: hsl(30, 100%, 50%)"></i><span>CN</span><h2 class="hitokoto" id="yiyancon" style="color: #0a0a0a"></h2><script type="text/javascript" src="https://international.v1.hitokoto.cn?encode=js&amp;amp;charset=utf-8&amp;amp;&amp;amp;c=j&amp;amp;c=k&amp;amp;c=l"></script></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">23</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/NiuHK" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/NiuHK"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#5000字多图长文预警！手把手带你调参Yolo-v5（二）"><span class="level-left"><span class="level-item">1</span><span class="level-item">5000字多图长文预警！手把手带你调参Yolo v5（二）</span></span></a></li><li><a class="level is-mobile" href="#0-首次运行常见错误🍀"><span class="level-left"><span class="level-item">2</span><span class="level-item">0.首次运行常见错误🍀</span></span></a></li><li><a class="level is-mobile" href="#1-train-py参数解析🚀"><span class="level-left"><span class="level-item">3</span><span class="level-item">1.train.py参数解析🚀</span></span></a></li><li><a class="level is-mobile" href="#1-1’–weights’"><span class="level-left"><span class="level-item">4</span><span class="level-item">1.1’–weights’</span></span></a></li><li><a class="level is-mobile" href="#1-2’–cfg’"><span class="level-left"><span class="level-item">5</span><span class="level-item">1.2’–cfg’</span></span></a></li><li><a class="level is-mobile" href="#1-3’–data’"><span class="level-left"><span class="level-item">6</span><span class="level-item">1.3’–data’</span></span></a></li><li><a class="level is-mobile" href="#1-4’–hyp’"><span class="level-left"><span class="level-item">7</span><span class="level-item">1.4’–hyp’</span></span></a></li><li><a class="level is-mobile" href="#1-5’–epochs’"><span class="level-left"><span class="level-item">8</span><span class="level-item">1.5’–epochs’</span></span></a></li><li><a class="level is-mobile" href="#1-6’–batch-size’"><span class="level-left"><span class="level-item">9</span><span class="level-item">1.6’–batch-size’</span></span></a></li><li><a class="level is-mobile" href="#1-7’–imgsz’-‘–img’-‘–img-size’"><span class="level-left"><span class="level-item">10</span><span class="level-item">1.7’–imgsz’, ‘–img’, ‘–img-size’</span></span></a></li><li><a class="level is-mobile" href="#1-8’–rect’🍀"><span class="level-left"><span class="level-item">11</span><span class="level-item">1.8’–rect’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-9’–resume’🍀"><span class="level-left"><span class="level-item">12</span><span class="level-item">1.9’–resume’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-10’–nosave’"><span class="level-left"><span class="level-item">13</span><span class="level-item">1.10’–nosave’</span></span></a></li><li><a class="level is-mobile" href="#1-11’–noval’"><span class="level-left"><span class="level-item">14</span><span class="level-item">1.11’–noval’</span></span></a></li><li><a class="level is-mobile" href="#1-12’–noautoanchor’🍀"><span class="level-left"><span class="level-item">15</span><span class="level-item">1.12’–noautoanchor’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-13’–evolve’🍀"><span class="level-left"><span class="level-item">16</span><span class="level-item">1.13’–evolve’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-14’–bucket’"><span class="level-left"><span class="level-item">17</span><span class="level-item">1.14’–bucket’</span></span></a></li><li><a class="level is-mobile" href="#1-15’–cache’"><span class="level-left"><span class="level-item">18</span><span class="level-item">1.15’–cache’</span></span></a></li><li><a class="level is-mobile" href="#1-16’–image-weights’"><span class="level-left"><span class="level-item">19</span><span class="level-item">1.16’–image-weights’</span></span></a></li><li><a class="level is-mobile" href="#1-17’–device’"><span class="level-left"><span class="level-item">20</span><span class="level-item">1.17’–device’</span></span></a></li><li><a class="level is-mobile" href="#1-18’–multi-scale’🍀"><span class="level-left"><span class="level-item">21</span><span class="level-item">1.18’–multi-scale’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-19’–single-cls’"><span class="level-left"><span class="level-item">22</span><span class="level-item">1.19’–single-cls’</span></span></a></li><li><a class="level is-mobile" href="#1-20’–optimizer’"><span class="level-left"><span class="level-item">23</span><span class="level-item">1.20’–optimizer’</span></span></a></li><li><a class="level is-mobile" href="#1-21’–sync-bn’"><span class="level-left"><span class="level-item">24</span><span class="level-item">1.21’–sync-bn’</span></span></a></li><li><a class="level is-mobile" href="#1-22’–workers’"><span class="level-left"><span class="level-item">25</span><span class="level-item">1.22’–workers’</span></span></a></li><li><a class="level is-mobile" href="#1-23’–project’"><span class="level-left"><span class="level-item">26</span><span class="level-item">1.23’–project’</span></span></a></li><li><a class="level is-mobile" href="#1-24’–name’"><span class="level-left"><span class="level-item">27</span><span class="level-item">1.24’–name’</span></span></a></li><li><a class="level is-mobile" href="#1-25’–exist-ok’"><span class="level-left"><span class="level-item">28</span><span class="level-item">1.25’–exist-ok’</span></span></a></li><li><a class="level is-mobile" href="#1-26’–quad’"><span class="level-left"><span class="level-item">29</span><span class="level-item">1.26’–quad’</span></span></a></li><li><a class="level is-mobile" href="#1-27’–cos-lr’🍀"><span class="level-left"><span class="level-item">30</span><span class="level-item">1.27’–cos-lr’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-28’–label-smoothing’🍀"><span class="level-left"><span class="level-item">31</span><span class="level-item">1.28’–label-smoothing’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-29’–patience’"><span class="level-left"><span class="level-item">32</span><span class="level-item">1.29’–patience’</span></span></a></li><li><a class="level is-mobile" href="#1-30’–freeze’🍀"><span class="level-left"><span class="level-item">33</span><span class="level-item">1.30’–freeze’🍀</span></span></a></li><li><a class="level is-mobile" href="#1-31’–save-period’"><span class="level-left"><span class="level-item">34</span><span class="level-item">1.31’–save-period’</span></span></a></li><li><a class="level is-mobile" href="#1-32’–local-rank’"><span class="level-left"><span class="level-item">35</span><span class="level-item">1.32’–local_rank’</span></span></a></li><li><a class="level is-mobile" href="#1-33’–entity’"><span class="level-left"><span class="level-item">36</span><span class="level-item">1.33’–entity’</span></span></a></li><li><a class="level is-mobile" href="#1-34’–upload-dataset’"><span class="level-left"><span class="level-item">37</span><span class="level-item">1.34’–upload_dataset’</span></span></a></li><li><a class="level is-mobile" href="#1-35’–bbox-interval’"><span class="level-left"><span class="level-item">38</span><span class="level-item">1.35’–bbox_interval’</span></span></a></li><li><a class="level is-mobile" href="#1-36’–artifact-alias’"><span class="level-left"><span class="level-item">39</span><span class="level-item">1.36’–artifact_alias’</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/icon1.svg" alt="HK&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 Daniel Niu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="/js/custom.js" defer></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
