@@ -11776,3 +11776,14 @@ a {
   -webkit-transition: box-shadow 0.2s ease-in-out;
   transition: box-shadow 0.2s ease-in-out;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.icon-creative-commons {
+  background-image: url("/img/lock.png");
+}
